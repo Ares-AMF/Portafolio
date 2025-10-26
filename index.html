@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ares Arturo Molina Franco | CTO y Estratega en IA</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="hero">
+        <nav class="navbar">
+            <div class="logo">ARES</div>
+            <ul class="nav-links">
+                <li><a href="#sobre-mi">Sobre Mí</a></li>
+                <li><a href="#proyectos">Proyectos</a></li>
+                <li><a href="#tecnologias">Tecnologías</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+            <div class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+        </nav>
+        <div class="hero-content">
+            <h1 id="main-title">Ares Arturo Molina Franco</h1>
+            <p id="subtitle">CTO, Estratega en IA y Ciencia Abierta</p>
+            <a href="#proyectos" class="cta-button">Ver Mis Proyectos <i class="fas fa-arrow-right"></i></a>
+        </div>
+        <div id="particles-js"></div>
+    </header>
+
+    <main>
+        <section id="sobre-mi" class="section">
+            <h2>Sobre Mí</h2>
+            <div class="sobre-mi-container">
+                <img src="ares-photo.jpg" alt="Ares Arturo Molina Franco" class="profile-pic">
+                <div class="sobre-mi-texto">
+                    <h3>Líder técnico visionario</h3>
+                    <p>Soy un líder técnico con experiencia en el desarrollo de soluciones full-stack, enfocado en la <strong>democratización de la ciencia a través de la inteligencia artificial</strong>. Mi perfil combina el desarrollo de software, la arquitectura técnica y el liderazgo de equipos. Me dedico a crear herramientas accesibles y a posicionar proyectos que generen un impacto social.</p>
+                    <p>Actualmente curso la <strong>Ingeniería en Sistemas Computacionales</strong>. Más allá de lo profesional, soy un apasionado de la biología, el dibujo y la escritura. Creo firmemente en la filosofía de "compartir lo aprendido para que otros avancen más rápido".</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="proyectos" class="section">
+            <h2>Proyectos Destacados</h2>
+            <p class="section-subtitle">Un vistazo a la arquitectura, ejecución y resolución de problemas en proyectos reales.</p>
+            
+            <div class="project-accordion">
+
+                <div class="project-item">
+                    <button class="project-header">
+                        <div class="project-header-title">
+                            <h3>AgriTech "Chuuk" (MVP)</h3>
+                            <span class="project-summary">Plataforma de agricultura de precisión con IA (YOLOv8) y "gemelo digital".</span>
+                        </div>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="project-content">
+                        <p><strong>El Objetivo:</strong> Diseñar una plataforma de agricultura de precisión (v3.0) que funcione como un "gemelo digital" de un sembradío. El sistema evolucionó desde un simple detector de enfermedades en hojas de aguacate a una plataforma integral que combina análisis de IA con monitoreo de datos ambientales simulados.</p>
+                        <p><strong>Características Clave:</strong></p>
+                        <ul>
+                            <li>Migración estratégica de Flask a FastAPI para resolver problemas de servicio de archivos estáticos y adoptar una arquitectura asíncrona.</li>
+                            <li>Implementación de un script (`seed_database.py`) para simular 30 días de datos de sensores IoT, permitiendo el desarrollo del "gemelo digital" sin hardware físico.</li>
+                        </ul>
+                        <div class="project-tags">
+                            <span>FastAPI</span>
+                            <span>Python</span>
+                            <span>YOLOv8</span>
+                            <span>JavaScript</span>
+                            <span>Leaflet.js</span>
+                            <span>Chart.js</span>
+                            <span>MySQL</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-item">
+                    <button class="project-header">
+                        <div class="project-header-title">
+                            <h3>MicroOV</h3>
+                            <span class="project-summary">Análisis microscópico en tiempo real asistido por IA (YOLOv8 y GPT-4).</span>
+                        </div>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="project-content">
+                        <p><strong>El Objetivo:</strong> Crear una aplicación web (v5.5) para el <strong>análisis microscópico asistido en tiempo real</strong>, diseñada como una herramienta potente y accesible para entornos con recursos limitados.</p>
+                        <p><strong>Características Clave:</strong></p>
+                        <ul>
+                            <li>Integración del asistente <strong>"Luna AI" (GPT-4)</strong>, que guía al usuario a través de prompts y envía el historial de chat completo en cada consulta para mantener el contexto.</li>
+                            <li>Doble modo de análisis: Detección automática con YOLOv8 y análisis manual donde el usuario dibuja un recuadro de interés.</li>
+                            <li>Manejo de estado complejo en el frontend para el control de la cámara (ciclo de 3 estados: 'off', 'live', 'captured') y transmisión de video en vivo.</li>
+                        </ul>
+                        <div class="project-tags">
+                            <span>FastAPI</span>
+                            <span>Python</span>
+                            <span>YOLOv8</span>
+                            <span>GPT-4 API</span>
+                            <span>JavaScript</span>
+                            <span>TailwindCSS</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-item">
+                    <button class="project-header">
+                        <div class="project-header-title">
+                            <h3>Smart-FIFO</h3>
+                            <span class="project-summary">Gestión de inventarios con lógica FIFO, códigos QR y dashboard en tiempo real.</span>
+                        </div>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="project-content">
+                        <p><strong>El Objetivo:</strong> Desarrollar una aplicación web (v1.2) para la gestión eficiente de inventarios que asegura la rotación de productos usando el principio <strong>FIFO (First-In, First-Out)</strong>. El sistema digitaliza el registro, seguimiento y despacho de lotes para eliminar la ambigüedad.</p>
+                        <p><strong>Características Clave:</strong></p>
+                        <ul>
+                            <li>Lógica de negocio central que <strong>identifica y muestra automáticamente el próximo lote a despachar</strong>.</li>
+                            <li>Gestión de ubicaciones físicas del almacén (ej. A1, B2), controlando su estado (`empty` u `occupied`) para evitar errores de asignación.</li>
+                            <li>Dashboard en tiempo real con KPIs, gráficos de inventario (Chart.js) y un <strong>mapa visual del almacén</strong> que señala la ubicación exacta del próximo lote a retirar.</li>
+                        </ul>
+                        <div class="project-tags">
+                            <span>FastAPI</span>
+                            <span>Python</span>
+                            <span>JavaScript</span>
+                            <span>Chart.js</span>
+                            <span>jsPDF</span>
+                            <span>MySQL</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-item">
+                    <button class="project-header">
+                        <div class="project-header-title">
+                            <h3>LabSnapDatabase</h3>
+                            <span class="project-summary">Sistema CRUD para gestión de reportes de laboratorio (22 tipos de estudio).</span>
+                        </div>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="project-content">
+                        <p><strong>El Objetivo:</strong> Construir un sistema robusto (v2.0) para la gestión integral de reportes de laboratorio. La aplicación maneja el ciclo <strong>CRUD (Crear, Leer, Editar, Actualizar, Eliminar)</strong> completo para 22 tipos de estudios diferentes, mapeados a través de 9 tablas de resultados.</p>
+                        <p><strong>Características Clave:</strong></p>
+                        <ul>
+                            <li>Implementación de <strong>cálculos automáticos en tiempo real</strong> en el frontend (ej. *globulina = proteínas_totales - albumina*) usando la función `watch` de Vue.js.</li>
+                            <li>Arquitectura de datos compleja con lógica de mapeo para guardar y actualizar 22 estudios en 9 tablas relacionadas usando `updateOrCreate` de Eloquent dentro de una transacción segura.</li>
+                            <li>Depuración avanzada de todo el flujo de datos, resolviendo `RelationNotFoundException` en el backend, errores de tipos de datos (string "N/A" en columnas `double`) y estandarización de claves.</li>
+                        </ul>
+                        <div class="project-tags">
+                            <span>Laravel</span>
+                            <span>PHP</span>
+                            <span>Vue.js</span>
+                            <span>Inertia.js</span>
+                            <span>MySQL</span>
+                            <span>TailwindCSS</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section id="tecnologias" class="section">
+            <h2>Tecnologías Principales</h2>
+            <div class="tech-icons">
+                <div class="tech-icon" data-tooltip="Python"><i class="fab fa-python"></i></div>
+                <div class="tech-icon" data-tooltip="FastAPI"><i class="fas fa-server"></i></div>
+                <div class="tech-icon" data-tooltip="PHP"><i class="fab fa-php"></i></div>
+                <div class="tech-icon" data-tooltip="Laravel"><i class="fab fa-laravel"></i></div>
+                <div class="tech-icon" data-tooltip="JavaScript"><i class="fab fa-js-square"></i></div>
+                <div class="tech-icon" data-tooltip="Vue.js"><i class="fab fa-vuejs"></i></div>
+                <div class="tech-icon" data-tooltip="MySQL"><i class="fas fa-database"></i></div>
+                <div class="tech-icon" data-tooltip="Git"><i class="fab fa-git-alt"></i></div>
+            </div>
+        </section>
+
+        <section id="contacto" class="section">
+            <h2>Hablemos</h2>
+            <p>Si tienes un proyecto en mente, una oportunidad de colaboración o simplemente quieres conectar, no dudes en contactarme.</p>
+            <div class="social-icons">
+                <a href="https://www.linkedin.com/in/ares-arturo-molina-franco-4883aa35a" target="_blank" aria-label="LinkedIn" data-tooltip="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/Ares-AMF" target="_blank" aria-label="Github" data-tooltip="GitHub"><i class="fab fa-github"></i></a>
+                <a href="mailto:arturo.franco1406@mail.com" target="_blank" aria-label="Email" data-tooltip="Email"><i class="fas fa-envelope"></i></a>
+            </div>
+            </section>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="currentYear"></span> Ares Arturo Molina Franco. Creado con pasión y código.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script src="app.js"></script>
+</body>
+</html>
