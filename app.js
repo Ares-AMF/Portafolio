@@ -5,13 +5,13 @@ document.addEventListener('DOMContentLoaded', () => {
     const navbar = document.querySelector('.navbar');
     const subtitleElement = document.getElementById('subtitle');
 
-    // Typed.js para efecto de escritura
+// Typed.js para efecto de escritura
      if (subtitleElement) {
         new Typed('#subtitle', {
             strings: [
-                `CTO, <span class="highlight-ai">Estratega en IA</span> y Ciencia Abierta`,
-                `Líder técnico con enfoque en <span class="highlight-ai">democratizar la ciencia</span>.`,
-                `Desarrollador Full Stack <span class="highlight-ai">Python & IA</span>.`
+                `Arquitecto de <span class="highlight-ai">Software e IA</span>`,
+                `Especialista en productos 0→1 con <span class="highlight-ai">Python & FastAPI</span>.`,
+                `Convierto tu idea en un <span class="highlight-ai">producto 'pulido'</span>.`
             ],
             typeSpeed: 70,
             backSpeed: 30,
