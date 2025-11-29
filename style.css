@@ -646,4 +646,101 @@ footer p {
     margin-bottom: 0.5rem;
     font-weight: 600;
     font-family: var(--font-primary);
+
+}
+
+/* --- ESTILOS NUEVOS: Insignia de Premio y Sección de Herramientas --- */
+
+/* Insignia Dorada para AgriTech */
+.award-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    background-color: rgba(255, 215, 0, 0.1); /* Dorado muy sutil */
+    color: #FFD700; /* Dorado brillante */
+    border: 1px solid #FFD700;
+    padding: 0.3rem 0.8rem;
+    border-radius: 50px;
+    font-size: 0.85rem;
+    font-weight: 700;
+    margin-top: 0.5rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    width: fit-content;
+}
+
+/* Grid para Herramientas Open Source */
+.tools-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    max-width: 1000px;
+    margin: 3rem auto 0;
+    text-align: left;
+}
+
+.tool-card {
+    background: var(--secondary-bg);
+    border: 1px solid var(--border-color);
+    border-radius: 12px;
+    padding: 2rem;
+    transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.tool-card:hover {
+    transform: translateY(-5px);
+    border-color: var(--accent-guinda);
+    box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.5);
+}
+
+.tool-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.tool-icon {
+    font-size: 1.5rem;
+    color: var(--accent-guinda);
+}
+
+.tool-card h3 {
+    font-family: var(--font-primary);
+    font-size: 1.3rem;
+    color: var(--text-primary);
+    margin-bottom: 0.5rem;
+}
+
+.tool-desc {
+    color: var(--text-secondary);
+    font-size: 0.95rem;
+    margin-bottom: 1.5rem;
+    flex-grow: 1;
+}
+
+.tool-tech {
+    font-size: 0.8rem;
+    color: var(--text-primary);
+    opacity: 0.7;
+    margin-bottom: 1.5rem;
+    font-family: monospace;
+}
+
+.btn-github {
+    text-decoration: none;
+    color: var(--text-primary);
+    font-weight: 600;
+    font-size: 0.9rem;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    transition: color 0.3s ease;
+}
+
+.btn-github:hover {
+    color: var(--accent-guinda);
 }
