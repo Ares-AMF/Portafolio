@@ -258,8 +258,6 @@ body {
     text-align: left;
 }
 
-/* --- INICIO DE LA MODIFICACIÓN --- */
-
 /* Ajuste para el grid en pantallas grandes para compensar el tamaño de la foto */
 @media (min-width: 768px) {
     .sobre-mi-container {
@@ -277,8 +275,6 @@ body {
     box-shadow: 0 0 35px var(--box-shadow-light); /* Sombra un poco más prominente */
     margin: 0 auto; /* Centrar en móvil */
 }
-
-/* --- FIN DE LA MODIFICACIÓN --- */
 
 
 .sobre-mi-texto h3 {
@@ -359,13 +355,16 @@ body {
     margin-top: 0.25rem;
 }
 
-.project-header i {
+/* --- CORRECCIÓN: Solo rotar la flecha, no el trofeo --- */
+/* Definir la transición solo para la flecha */
+.project-header .fa-chevron-down {
     font-size: 1.2rem;
     color: var(--accent-guinda);
     transition: transform 0.4s ease;
 }
 
-.project-header.active i {
+/* Rotar SOLO la flecha al activar */
+.project-header.active .fa-chevron-down {
     transform: rotate(180deg);
 }
 
@@ -667,6 +666,12 @@ footer p {
     text-transform: uppercase;
     letter-spacing: 0.5px;
     width: fit-content;
+}
+
+/* Asegurar que el trofeo se quede quieto y dorado */
+.award-badge i {
+    transform: none !important;
+    color: inherit; /* Para que tome el dorado del badge */
 }
 
 /* Grid para Herramientas Open Source */
