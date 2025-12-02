@@ -1,21 +1,23 @@
-/* Variables de Color y Fuentes */
+/* =========================================
+   1. VARIABLES Y RESETEO
+   ========================================= */
 :root {
-    --primary-bg: #121212; /* Negro profundo */
-    --secondary-bg: #1E1E1E; /* Un gris oscuro para elementos como cards */
-    --accent-guinda: #9F1010; /* Guinda principal */
+    --primary-bg: #121212;       /* Negro profundo */
+    --secondary-bg: #1E1E1E;     /* Gris oscuro para cards */
+    --accent-guinda: #9F1010;    /* Guinda principal */
     --accent-guinda-hover: #BF2A2A; /* Guinda para hover */
-    --text-primary: #F5F5F5; /* Blanco/Gris muy claro */
-    --text-secondary: #B0B0B0; /* Gris claro para subtítulos */
+    --text-primary: #F5F5F5;     /* Blanco/Gris muy claro */
+    --text-secondary: #B0B0B0;   /* Gris claro para subtítulos */
     --text-logo: #FFFFFF;
-    --border-color: #333333; /* Bordes sutiles */
+    --border-color: #333333;     /* Bordes sutiles */
 
     --font-primary: 'Montserrat', sans-serif;
     --font-secondary: 'Open Sans', sans-serif;
-    --box-shadow-light: rgba(159, 16, 16, 0.2); /* Sombra guinda sutil */
+    
+    --box-shadow-light: rgba(159, 16, 16, 0.2);
     --box-shadow-strong: rgba(159, 16, 16, 0.5);
 }
 
-/* Reseteo Básico */
 * {
     margin: 0;
     padding: 0;
@@ -34,7 +36,9 @@ body {
     overflow-x: hidden;
 }
 
-/* Hero Section */
+/* =========================================
+   2. HERO SECTION & PARTICLES
+   ========================================= */
 .hero {
     height: 100vh;
     color: var(--text-primary);
@@ -50,96 +54,9 @@ body {
     top: 0;
     left: 0;
     z-index: 1;
-    background-color: var(--primary-bg); /* Fondo para particles */
+    background-color: var(--primary-bg);
 }
 
-/* Navbar */
-.navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1.5rem 5%;
-    background-color: transparent;
-    position: fixed;
-    width: 100%;
-    top: 0;
-    z-index: 1000;
-    transition: background-color 0.4s ease, box-shadow 0.4s ease;
-}
-
-.navbar.scrolled {
-    background-color: rgba(18, 18, 18, 0.85); /* Negro semi-transparente */
-    backdrop-filter: blur(10px);
-    box-shadow: 0 2px 15px rgba(0,0,0,0.3);
-}
-
-.logo {
-    font-family: var(--font-primary);
-    font-size: 2rem;
-    font-weight: 900; /* Más grueso */
-    color: var(--text-logo);
-    letter-spacing: 1px;
-}
-
-.nav-links {
-    list-style: none;
-    display: flex;
-}
-
-.nav-links li {
-    margin-left: 2.5rem; /* Más espaciado */
-}
-
-.nav-links a {
-    text-decoration: none;
-    color: var(--text-primary);
-    font-family: var(--font-primary);
-    font-weight: 600;
-    font-size: 0.95rem;
-    letter-spacing: 0.5px;
-    transition: color 0.3s ease;
-    position: relative; /* Para el efecto underline */
-}
-
-.nav-links a::after { /* Efecto underline sutil */
-    content: '';
-    position: absolute;
-    width: 0;
-    height: 2px;
-    display: block;
-    margin-top: 5px;
-    right: 0;
-    background: var(--accent-guinda);
-    transition: width 0.3s ease;
-    -webkit-transition: width 0.3s ease;
-}
-
-.nav-links a:hover {
-    color: var(--accent-guinda);
-}
-
-.nav-links a:hover::after {
-    width: 100%;
-    left: 0;
-    background: var(--accent-guinda-hover);
-}
-
-.burger {
-    display: none;
-    cursor: pointer;
-}
-
-.burger div {
-    width: 28px; /* Ligeramente más grande */
-    height: 3px;
-    background-color: var(--text-primary);
-    margin: 5px;
-    transition: all 0.3s ease;
-    border-radius: 2px;
-}
-
-
-/* Hero Content */
 .hero-content {
     display: flex;
     flex-direction: column;
@@ -153,7 +70,7 @@ body {
 
 .hero-content h1 {
     font-family: var(--font-primary);
-    font-size: clamp(2.5rem, 6vw, 4.0rem); /* Ligeramente ajustado para nombre largo */
+    font-size: clamp(2.5rem, 6vw, 4.0rem);
     margin-bottom: 0.8rem;
     font-weight: 700;
     letter-spacing: 1px;
@@ -169,7 +86,7 @@ body {
     color: var(--text-secondary);
     animation: fadeInUp 1s ease-out 0.5s;
     animation-fill-mode: backwards;
-    min-height: 50px; /* Espacio para el typed.js */
+    min-height: 50px;
 }
 
 .highlight-ai {
@@ -177,6 +94,7 @@ body {
     font-weight: 700;
 }
 
+/* Botón CTA */
 .cta-button {
     background-color: var(--accent-guinda);
     color: white;
@@ -189,7 +107,7 @@ body {
     transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
     box-shadow: 0 5px 20px var(--box-shadow-light);
     animation: pulse 2s infinite 1s;
-    border: 2px solid var(--accent-guinda); /* Borde del mismo color */
+    border: 2px solid var(--accent-guinda);
 }
 
 .cta-button i {
@@ -208,17 +126,102 @@ body {
     transform: translateX(6px);
 }
 
-/* Secciones Generales */
+/* =========================================
+   3. NAVBAR
+   ========================================= */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 5%;
+    background-color: transparent;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    transition: background-color 0.4s ease, box-shadow 0.4s ease;
+}
+
+.navbar.scrolled {
+    background-color: rgba(18, 18, 18, 0.85);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 2px 15px rgba(0,0,0,0.3);
+}
+
+.logo {
+    font-family: var(--font-primary);
+    font-size: 2rem;
+    font-weight: 900;
+    color: var(--text-logo);
+    letter-spacing: 1px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin-left: 2.5rem;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: var(--text-primary);
+    font-family: var(--font-primary);
+    font-weight: 600;
+    font-size: 0.95rem;
+    letter-spacing: 0.5px;
+    transition: color 0.3s ease;
+    position: relative;
+}
+
+.nav-links a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    display: block;
+    margin-top: 5px;
+    right: 0;
+    background: var(--accent-guinda);
+    transition: width 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: var(--accent-guinda);
+}
+
+.nav-links a:hover::after {
+    width: 100%;
+    left: 0;
+    background: var(--accent-guinda-hover);
+}
+
+/* Menú Hamburguesa */
+.burger {
+    display: none;
+    cursor: pointer;
+}
+
+.burger div {
+    width: 28px;
+    height: 3px;
+    background-color: var(--text-primary);
+    margin: 5px;
+    transition: all 0.3s ease;
+    border-radius: 2px;
+}
+
+/* =========================================
+   4. SECCIONES GENERALES
+   ========================================= */
 .section {
     padding: 80px 5%;
     text-align: center;
 }
-.section:nth-child(even) { /* Alternar color de fondo sutilmente */
-    background-color: var(--primary-bg);
-}
-.section:nth-child(odd) {
-    background-color: var(--secondary-bg);
-}
+.section:nth-child(even) { background-color: var(--primary-bg); }
+.section:nth-child(odd) { background-color: var(--secondary-bg); }
 
 .section h2 {
     font-family: var(--font-primary);
@@ -247,7 +250,9 @@ body {
     margin: -3rem auto 3rem;
 }
 
-/* Sobre Mí (NUEVO) */
+/* =========================================
+   5. SECCIÓN SOBRE MÍ
+   ========================================= */
 .sobre-mi-container {
     display: grid;
     grid-template-columns: 1fr;
@@ -258,24 +263,22 @@ body {
     text-align: left;
 }
 
-/* Ajuste para el grid en pantallas grandes para compensar el tamaño de la foto */
 @media (min-width: 768px) {
     .sobre-mi-container {
-        grid-template-columns: 300px 1fr; /* Ajusta el ancho de la columna de la imagen */
-        gap: 3.5rem; /* Aumenta el espacio entre la foto y el texto */
+        grid-template-columns: 300px 1fr;
+        gap: 3.5rem;
     }
 }
 
 .profile-pic {
-    width: 280px; /* Incrementado el tamaño de la imagen */
-    height: 280px; /* Incrementado el tamaño de la imagen */
+    width: 280px;
+    height: 280px;
     border-radius: 50%;
     object-fit: cover;
-    border: 6px solid var(--accent-guinda); /* Borde ligeramente más grueso */
-    box-shadow: 0 0 35px var(--box-shadow-light); /* Sombra un poco más prominente */
-    margin: 0 auto; /* Centrar en móvil */
+    border: 6px solid var(--accent-guinda);
+    box-shadow: 0 0 35px var(--box-shadow-light);
+    margin: 0 auto;
 }
-
 
 .sobre-mi-texto h3 {
     font-family: var(--font-primary);
@@ -296,7 +299,9 @@ body {
     font-weight: 600;
 }
 
-/* --- Proyectos (NUEVO ACORDEÓN) --- */
+/* =========================================
+   6. PROYECTOS (ACORDEÓN) - CORREGIDO
+   ========================================= */
 .project-accordion {
     max-width: 900px;
     margin: 2rem auto 0;
@@ -308,32 +313,27 @@ body {
     border: 1px solid var(--border-color);
     border-radius: 8px;
     margin-bottom: 1rem;
-    overflow: hidden; /* Clave para el acordeón */
+    overflow: hidden;
 }
 
 .project-header {
     background: transparent;
     border: none;
-    border-bottom: 1px solid var(--border-color); /* Separador sutil */
+    border-bottom: 1px solid var(--border-color);
     color: var(--text-primary);
     padding: 1.5rem;
     width: 100%;
     text-align: left;
     cursor: pointer;
     font-family: var(--font-primary);
-    
     display: flex;
     justify-content: space-between;
     align-items: center;
     transition: background-color 0.3s ease;
 }
-.project-item:last-child .project-header {
-    border-bottom: none;
-}
 
-.project-header:hover {
-    background-color: rgba(255, 255, 255, 0.03);
-}
+.project-item:last-child .project-header { border-bottom: none; }
+.project-header:hover { background-color: rgba(255, 255, 255, 0.03); }
 
 .project-header-title {
     display: flex;
@@ -355,21 +355,45 @@ body {
     margin-top: 0.25rem;
 }
 
-/* --- CORRECCIÓN: Solo rotar la flecha, no el trofeo --- */
-/* Definir la transición solo para la flecha */
+/* --- CORRECCIÓN DE ROTACIÓN: Solo la flecha --- */
 .project-header .fa-chevron-down {
     font-size: 1.2rem;
     color: var(--accent-guinda);
     transition: transform 0.4s ease;
 }
 
-/* Rotar SOLO la flecha al activar */
 .project-header.active .fa-chevron-down {
     transform: rotate(180deg);
 }
 
+/* Estilos de la Insignia Dorada (Sin rotación) */
+.award-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    background-color: rgba(255, 215, 0, 0.1);
+    color: #FFD700;
+    border: 1px solid #FFD700;
+    padding: 0.3rem 0.8rem;
+    border-radius: 50px;
+    font-size: 0.85rem;
+    font-weight: 700;
+    margin-top: 0.5rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    width: fit-content;
+}
+
+/* PROTECCIÓN DEL TROFEO: Asegura que nunca rote */
+.award-badge i {
+    transform: none !important;
+    transition: none !important;
+    display: inline-block;
+}
+
+/* Contenido del Proyecto */
 .project-content {
-    background: #161616; /* Ligeramente más oscuro que el fondo de la card */
+    background: #161616;
     padding: 0 1.5rem;
     max-height: 0;
     overflow: hidden;
@@ -377,7 +401,7 @@ body {
 }
 
 .project-content.active {
-    max-height: 1000px; /* Valor grande para permitir que se expanda */
+    max-height: 1000px;
     padding: 1.5rem;
     border-top: 1px solid var(--border-color);
 }
@@ -400,243 +424,18 @@ body {
     color: var(--text-secondary);
 }
 
-.project-content ul li {
-    margin-bottom: 0.5rem;
-}
-
-.project-content ul li strong {
-    color: var(--text-primary);
-}
-
-
-/* Tecnologías */
-.tech-icons {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 2rem;
-    margin-top: 2rem;
-}
-
-.tech-icon {
-    font-size: 3.5rem; /* Iconos más grandes */
-    color: var(--text-secondary);
-    transition: color 0.3s ease, transform 0.3s ease;
-    position: relative; /* Para el tooltip */
-}
-
-.tech-icon:hover {
-    color: var(--accent-guinda);
-    transform: scale(1.2);
-}
-
-/* Tooltip para iconos de tecnología */
-.tech-icon::before {
-    content: attr(data-tooltip);
-    position: absolute;
-    bottom: 100%;
-    left: 50%;
-    transform: translateX(-50%) translateY(-5px); /* Ajustar posicionamiento */
-    background-color: var(--accent-guinda);
-    color: white;
-    padding: 0.4rem 0.8rem;
-    border-radius: 5px;
-    font-size: 0.8rem;
-    white-space: nowrap;
-    opacity: 0;
-    visibility: hidden;
-    transition: opacity 0.3s ease, visibility 0.3s ease;
-    z-index: 10;
-}
-
-.tech-icon:hover::before {
-    opacity: 1;
-    visibility: visible;
-    transform: translateX(-50%) translateY(-10px); /* Efecto de subida */
-}
-
-
-/* Contacto y Social Icons */
-#contacto p {
-    max-width: 600px;
-    margin: 0 auto;
-    color: var(--text-secondary);
-    font-size: 1.1rem;
-}
-
-.social-icons {
-    margin-top: 2.5rem;
-}
-
-.social-icons a {
-    color: var(--text-secondary);
-    font-size: 2.5rem;
-    margin: 0 1.2rem;
-    transition: color 0.3s ease, transform 0.3s ease;
-    position: relative; /* Para tooltip */
-}
-
-.social-icons a:hover {
-    color: var(--accent-guinda);
-    transform: translateY(-5px);
-}
-/* Tooltip para iconos sociales (similar a tech-icon) */
-.social-icons a::before {
-    content: attr(data-tooltip);
-    position: absolute;
-    top: -35px; /* Ajuste para que aparezca arriba */
-    left: 50%;
-    transform: translateX(-50%);
-    background-color: var(--accent-guinda);
-    color: white;
-    padding: 0.3rem 0.6rem;
-    border-radius: 4px;
-    font-size: 0.75rem;
-    white-space: nowrap;
-    opacity: 0;
-    visibility: hidden;
-    transition: opacity 0.2s ease, visibility 0.2s ease;
-}
-.social-icons a:hover::before {
-    opacity: 1;
-    visibility: visible;
-}
-
-
-/* Footer */
-footer {
-    background-color: #0A0A0A; /* Un negro aún más oscuro para el footer */
-    color: var(--text-secondary);
-    text-align: center;
-    padding: 2.5rem 0;
-    font-size: 0.9rem;
-    border-top: 1px solid var(--border-color);
-}
-footer p {
-    letter-spacing: 0.5px;
-}
-
-/* Animaciones */
-@keyframes fadeInDown {
-    from { opacity: 0; transform: translateY(-30px); }
-    to { opacity: 1; transform: translateY(0); }
-}
-
-@keyframes fadeInUp {
-    from { opacity: 0; transform: translateY(30px); }
-    to { opacity: 1; transform: translateY(0); }
-}
-
-@keyframes pulse {
-    0% { box-shadow: 0 0 0 0 var(--box-shadow-light); }
-    70% { box-shadow: 0 0 0 20px rgba(159, 16, 16, 0); } /* Guinda transparente */
-    100% { box-shadow: 0 0 0 0 rgba(159, 16, 16, 0); }
-}
-
-
-/* Responsive (Menú Hamburguesa) */
-@media screen and (max-width: 768px) {
-    .nav-links {
-        position: fixed; /* Cambiado a fixed para cubrir toda la pantalla */
-        right: 0px;
-        height: 100vh;
-        top: 0;
-        background-color: rgba(18, 18, 18, 0.98); /* Fondo oscuro para el menú móvil */
-        backdrop-filter: blur(5px);
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center; /* Centrar verticalmente los links */
-        width: 100%; /* Ocupa toda la pantalla */
-        transform: translateX(100%);
-        transition: transform 0.5s ease-in-out;
-        padding-top: 0;
-    }
-
-    .nav-links li {
-        opacity: 0;
-        margin-left: 0;
-        margin-bottom: 2.5rem; /* Más espaciado */
-    }
-
-    .nav-links a {
-        font-size: 1.3rem; /* Links más grandes en móvil */
-        color: var(--text-primary); /* Asegurar que sean visibles */
-    }
-    .nav-links a:hover {
-        color: var(--accent-guinda);
-    }
-    .nav-links a::after { /* Deshabilitar underline en móvil si se desea o ajustar */
-        display: none;
-    }
-
-    .burger {
-        display: block;
-        z-index: 1001; /* Encima del nav-links */
-        position: fixed; /* Para que no se mueva con el scroll del hero */
-        top: 1.7rem;
-        right: 5%;
-    }
-    .burger div {
-      background-color: var(--text-primary); /* Siempre visibles */
-    }
-
-    .navbar.scrolled .burger div { /* Mantiene el color de las líneas del burger */
-        background-color: var(--text-primary);
-    }
-
-
-    .hero-content h1 {
-        font-size: clamp(2rem, 10vw, 2.5rem); /* Ajustado para nombre largo */
-    }
-    .hero-content p#subtitle {
-        font-size: clamp(1rem, 5vw, 1.2rem);
-    }
-
-    .project-header h3 {
-        font-size: 1.2rem;
-    }
-    .project-summary {
-        font-size: 0.9rem;
-    }
-
-    .nav-active {
-        transform: translateX(0%);
-    }
-
-    @keyframes navLinkFade {
-        from {
-            opacity: 0;
-            transform: translateX(50px);
-        }
-        to {
-            opacity: 1;
-            transform: translateX(0px);
-        }
-    }
-
-    .toggle .line1 {
-        transform: rotate(-45deg) translate(-6px, 7px);
-    }
-    .toggle .line2 {
-        opacity: 0;
-    }
-    .toggle .line3 {
-        transform: rotate(45deg) translate(-6px, -7px);
-    }
-}
-/* --- ESTILOS PARA LAS NUEVAS ETIQUETAS DE PROYECTO --- */
+/* Etiquetas de Tecnología (Nuevas) */
 .project-content .project-tags {
-    margin-top: 1.5rem; /* Espacio antes de las etiquetas */
+    margin-top: 1.5rem;
     padding-top: 1rem;
     border-top: 1px solid var(--border-color);
-    display: flex; /* Para que las etiquetas se alineen */
-    flex-wrap: wrap; /* Para que se ajusten si son muchas */
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .project-content .project-tags span {
     display: inline-block;
-    background-color: rgba(159, 16, 16, 0.15); /* Guinda muy transparente */
+    background-color: rgba(159, 16, 16, 0.15);
     color: var(--accent-guinda);
     padding: 0.3rem 0.8rem;
     border-radius: 20px;
@@ -645,36 +444,11 @@ footer p {
     margin-bottom: 0.5rem;
     font-weight: 600;
     font-family: var(--font-primary);
-
 }
 
-/* --- ESTILOS NUEVOS: Insignia de Premio y Sección de Herramientas --- */
-
-/* Insignia Dorada para AgriTech */
-.award-badge {
-    display: inline-flex;
-    align-items: center;
-    gap: 0.5rem;
-    background-color: rgba(255, 215, 0, 0.1); /* Dorado muy sutil */
-    color: #FFD700; /* Dorado brillante */
-    border: 1px solid #FFD700;
-    padding: 0.3rem 0.8rem;
-    border-radius: 50px;
-    font-size: 0.85rem;
-    font-weight: 700;
-    margin-top: 0.5rem;
-    text-transform: uppercase;
-    letter-spacing: 0.5px;
-    width: fit-content;
-}
-
-/* Asegurar que el trofeo se quede quieto y dorado */
-.award-badge i {
-    transform: none !important;
-    color: inherit; /* Para que tome el dorado del badge */
-}
-
-/* Grid para Herramientas Open Source */
+/* =========================================
+   7. HERRAMIENTAS OPEN SOURCE (GRID)
+   ========================================= */
 .tools-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -748,4 +522,140 @@ footer p {
 
 .btn-github:hover {
     color: var(--accent-guinda);
+}
+
+/* =========================================
+   8. TECNOLOGÍAS & CONTACTO
+   ========================================= */
+.tech-icons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.tech-icon {
+    font-size: 3.5rem;
+    color: var(--text-secondary);
+    transition: color 0.3s ease, transform 0.3s ease;
+    position: relative;
+}
+
+.tech-icon:hover {
+    color: var(--accent-guinda);
+    transform: scale(1.2);
+}
+
+/* Tooltips */
+.tech-icon::before, .social-icons a::before {
+    content: attr(data-tooltip);
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: var(--accent-guinda);
+    color: white;
+    padding: 0.4rem 0.8rem;
+    border-radius: 5px;
+    font-size: 0.8rem;
+    white-space: nowrap;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+    z-index: 10;
+}
+
+.tech-icon::before { bottom: 100%; margin-bottom: 5px; }
+.social-icons a::before { top: -35px; }
+
+.tech-icon:hover::before {
+    opacity: 1; visibility: visible;
+    transform: translateX(-50%) translateY(-5px);
+}
+.social-icons a:hover::before {
+    opacity: 1; visibility: visible;
+}
+
+/* Social Icons */
+.social-icons { margin-top: 2.5rem; }
+.social-icons a {
+    color: var(--text-secondary);
+    font-size: 2.5rem;
+    margin: 0 1.2rem;
+    transition: color 0.3s ease, transform 0.3s ease;
+    position: relative;
+}
+.social-icons a:hover {
+    color: var(--accent-guinda);
+    transform: translateY(-5px);
+}
+
+/* =========================================
+   9. FOOTER & ANIMACIONES
+   ========================================= */
+footer {
+    background-color: #0A0A0A;
+    color: var(--text-secondary);
+    text-align: center;
+    padding: 2.5rem 0;
+    font-size: 0.9rem;
+    border-top: 1px solid var(--border-color);
+}
+
+@keyframes fadeInDown { from { opacity: 0; transform: translateY(-30px); } to { opacity: 1; transform: translateY(0); } }
+@keyframes fadeInUp { from { opacity: 0; transform: translateY(30px); } to { opacity: 1; transform: translateY(0); } }
+@keyframes pulse {
+    0% { box-shadow: 0 0 0 0 var(--box-shadow-light); }
+    70% { box-shadow: 0 0 0 20px rgba(159, 16, 16, 0); }
+    100% { box-shadow: 0 0 0 0 rgba(159, 16, 16, 0); }
+}
+
+/* =========================================
+   10. RESPONSIVE
+   ========================================= */
+@media screen and (max-width: 768px) {
+    .nav-links {
+        position: fixed;
+        right: 0;
+        height: 100vh;
+        top: 0;
+        background-color: rgba(18, 18, 18, 0.98);
+        backdrop-filter: blur(5px);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        transform: translateX(100%);
+        transition: transform 0.5s ease-in-out;
+        padding-top: 0;
+    }
+
+    .nav-links li { opacity: 0; margin: 0 0 2.5rem 0; }
+    .nav-links a { font-size: 1.3rem; color: var(--text-primary); }
+    .nav-links a::after { display: none; }
+
+    .burger {
+        display: block;
+        z-index: 1001;
+        position: fixed;
+        top: 1.7rem;
+        right: 5%;
+    }
+    .burger div { background-color: var(--text-primary); }
+    .navbar.scrolled .burger div { background-color: var(--text-primary); }
+
+    .hero-content h1 { font-size: clamp(2rem, 10vw, 2.5rem); }
+    .hero-content p#subtitle { font-size: clamp(1rem, 5vw, 1.2rem); }
+
+    .nav-active { transform: translateX(0%); }
+
+    @keyframes navLinkFade {
+        from { opacity: 0; transform: translateX(50px); }
+        to { opacity: 1; transform: translateX(0px); }
+    }
+
+    .toggle .line1 { transform: rotate(-45deg) translate(-6px, 7px); }
+    .toggle .line2 { opacity: 0; }
+    .toggle .line3 { transform: rotate(45deg) translate(-6px, -7px); }
 }
