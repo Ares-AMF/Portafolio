@@ -7,6 +7,8 @@
     <title>Ares Arturo Molina Franco | Arquitecto de Software e IA</title>
     
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+    
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
@@ -60,29 +62,76 @@
                 <div class="project-item">
                     <button class="project-header">
                         <div class="project-header-title">
-                            <h3>AgriTech "Chuuk" (MVP)</h3>
-                            <span class="project-summary">Plataforma de agricultura de precisión con IA (YOLOv8) y "gemelo digital".</span>
+                            <h3>AgriTech "Chúuk" (MVP)</h3>
+                            <span class="project-summary">Plataforma de agricultura de precisión con IA (YOLOv8n) y Fog Computing.</span>
                             <div class="award-badge">
-                                <i class="fas fa-trophy"></i> 1er Lugar Absoluto - FECI 2025
+                                <i class="fas fa-microscope"></i> Próxima Participación - FEMECI (Marzo 2026)
                             </div>
                         </div>
                         <i class="fas fa-chevron-down"></i>
                     </button>
                     <div class="project-content">
                         
-                        <p><strong>Validación:</strong> Galardonado con el 1er Lugar en la Feria de Ciencias e Ingenierías (Chihuahua 2025), validando la arquitectura técnica y el modelo de negocio ante jueces expertos.</p>
-                        <p><strong>El Problema de Negocio:</strong> La industria del aguacate (un mercado de $2.5 mil millones) sufre <strong>pérdidas de más del 30%</strong> por detección tardía de plagas y mala gestión del suelo.</p>
-                        <p><strong>Mi Solución (Optimización de Procesos):</strong> En lugar de reaccionar a la pérdida, AgriTech es un "centro de mando proactivo". La plataforma conecta el <strong>SÍNTOMA</strong> (detectado por IA) con la <strong>CAUSA</strong> (datos de sensores de pH y humedad).</p>
-                        <p><strong>El Valor (Resultado):</strong> Damos al agricultor los datos para tomar decisiones que evitan la merma. Estudios en el sector demuestran que esta gestión basada en datos puede <strong>aumentar la producción en 20 kg/árbol</strong>.</p>
+                        <p><strong>Validación:</strong> Proyecto seleccionado para competir en la Feria Nacional de Ciencias Mexicanas (FEMECI) en marzo de 2026, validando la arquitectura técnica y el modelo de negocio.</p>
+                        <p><strong>El Problema de Negocio:</strong> La industria del aguacate sufre <strong>pérdidas de más del 30%</strong> por detección tardía de plagas y mala gestión del suelo.</p>
+                        <p><strong>Mi Solución (Arquitectura Asíncrona):</strong> Desarrollé una plataforma con <strong>FastAPI</strong> que actúa como centro de mando proactivo. Conecta el síntoma (detectado por visión computacional con YOLOv8) con la causa (datos de sensores IoT).</p>
+                        <p><strong>El Valor (Resultado):</strong> Entregamos al agricultor métricas precisas para la toma de decisiones, optimizando procesos para aumentar el rendimiento por hectárea.</p>
                         
                         <div class="project-tags">
                             <span>FastAPI</span>
                             <span>Python</span>
-                            <span>YOLOv8</span>
+                            <span>YOLOv8n</span>
                             <span>JavaScript</span>
                             <span>Leaflet.js</span>
-                            <span>Chart.js</span>
-                            <span>MySQL</span>
+                            <span>PostgreSQL</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-item">
+                    <button class="project-header">
+                        <div class="project-header-title">
+                            <h3>CellyApp</h3>
+                            <span class="project-summary">Aplicación multiplataforma (Escritorio/Android) basada en arquitectura Chromium.</span>
+                        </div>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="project-content">
+                        
+                        <p><strong>El Problema de Negocio:</strong> Mantener bases de código separadas para aplicaciones de escritorio (Windows/Mac) y móviles (Android) duplica los tiempos y costos de desarrollo, además de fragmentar la interfaz.</p>
+                        <p><strong>Mi Solución (Desarrollo Multiplataforma):</strong> Diseño y desarrollo de una aplicación construida sobre un framework basado en <strong>Chromium</strong> (arquitectura similar a Discord). Esto me permite compartir el núcleo lógico y la UI, empaquetándola de forma nativa para ambos entornos.</p>
+                        <p><strong>El Valor (Escalabilidad):</strong> Despliegue ágil de nuevas características en ecosistemas de escritorio y Android simultáneamente, garantizando una experiencia de usuario estandarizada y reduciendo radicalmente el tiempo de mantenimiento.</p>
+
+                        <div class="project-tags">
+                            <span>JavaScript</span>
+                            <span>TypeScript</span>
+                            <span>Chromium</span>
+                            <span>App Android</span>
+                            <span>App Escritorio</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-item">
+                    <button class="project-header">
+                        <div class="project-header-title">
+                            <h3>LabSnap</h3>
+                            <span class="project-summary">Sistema integral de gestión de laboratorio (LIS) con respaldo corporativo.</span>
+                        </div>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="project-content">
+                        
+                        <p><strong>El Reto Empresarial:</strong> Modernizar y automatizar la captura de más de 22 tipos de estudios clínicos, garantizando la trazabilidad, cálculos precisos en tiempo real y la integridad de los datos médicos.</p>
+                        <p><strong>Mi Solución (Arquitectura B2B):</strong> Dirigí el desarrollo de la plataforma y el diseño del esquema de base de datos relacional. Actualmente lidero el proyecto en colaboración con ingenieros de <strong>Adaca Medical</strong> para integrar cálculos bioquímicos dinámicos directamente en la interfaz.</p>
+                        <p><strong>El Valor (Validación Comercial):</strong> El rigor técnico de la plataforma logró asegurar una inversión inicial corporativa, demostrando mi capacidad para ejecutar arquitecturas de grado empresarial.</p>
+
+                        <div class="project-tags">
+                            <span>Laravel</span>
+                            <span>Vue.js</span>
+                            <span>MySQL / PostgreSQL</span>
+                            <span>TailwindCSS</span>
+                            <span>Arquitectura B2B</span>
                         </div>
                     </div>
                 </div>
@@ -122,43 +171,16 @@
                     </button>
                     <div class="project-content">
                         
-                        <p><strong>El Problema de Negocio:</strong> Una mala rotación de inventario (no seguir el "Primero en Entrar, Primero en Salir") genera millones en mermas por productos caducados y costos de almacenamiento.</p>
-                        <p><strong>Mi Solución (Optimización de Procesos):</strong> Un sistema que <strong>garantiza digitalmente la rotación FIFO</strong>. La plataforma identifica automáticamente el lote correcto y usa un mapa visual del almacén para decirle al operario la ubicación exacta.</p>
-                        <p><strong>El Valor (Reducción de Costos):</strong> <strong>Elimina virtualmente las mermas</strong> por caducidad y <strong>reduce el tiempo de búsqueda y los errores humanos</strong> en el despacho, optimizando toda la operación logística.</p>
+                        <p><strong>El Problema de Negocio:</strong> Una mala rotación de inventario genera enormes mermas por productos caducados y eleva los costos de almacenamiento.</p>
+                        <p><strong>Mi Solución (Optimización de Procesos):</strong> Un sistema que <strong>garantiza digitalmente la rotación FIFO</strong>. La plataforma identifica automáticamente el lote correcto y usa un mapa visual del almacén para agilizar el despacho.</p>
+                        <p><strong>El Valor (Reducción de Costos):</strong> Elimina las mermas por caducidad y reduce los errores humanos, optimizando toda la operación logística del almacén.</p>
 
                         <div class="project-tags">
                             <span>FastAPI</span>
                             <span>Python</span>
                             <span>JavaScript</span>
-                            <span>Chart.js</span>
                             <span>Lógica FIFO</span>
-                            <span>jsPDF</span>
                             <span>MySQL</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="project-item">
-                    <button class="project-header">
-                        <div class="project-header-title">
-                            <h3>LabSnapDatabase</h3>
-                            <span class="project-summary">Sistema CRUD para gestión de reportes de laboratorio (22 tipos de estudio).</span>
-                        </div>
-                        <i class="fas fa-chevron-down"></i>
-                    </button>
-                    <div class="project-content">
-                        
-                        <p><strong>El Problema de Negocio:</strong> La captura manual de reportes de laboratorio para 22 tipos de estudios diferentes es un proceso lento, propenso a errores de cálculo y difícil de gestionar.</p>
-                        <p><strong>Mi Solución (Optimización de Procesos):</strong> Una plataforma de gestión que <strong>automatiza el trabajo del analista</strong>. El sistema realiza <strong>cálculos automáticos en tiempo real</strong> (ej. globulina = proteínas - albúmina) directamente en la interfaz.</p>
-                        <p><strong>El Valor (Reducción de Costos):</strong> <strong>Reduce drásticamente el tiempo de captura de reportes</strong> y <strong>elimina los errores de cálculo humano</strong>, asegurando la integridad de los datos y liberando horas de trabajo del personal.</p>
-
-                        <div class="project-tags">
-                            <span>Laravel</span>
-                            <span>PHP</span>
-                            <span>Vue.js</span>
-                            <span>Inertia.js</span>
-                            <span>MySQL</span>
-                            <span>TailwindCSS</span>
                         </div>
                     </div>
                 </div>
@@ -213,16 +235,35 @@
         
         <section id="tecnologias" class="section">
             <h2>Tecnologías Principales</h2>
-            <div class="tech-icons">
-                <div class="tech-icon" data-tooltip="Python"><i class="fab fa-python"></i></div>
-                <div class="tech-icon" data-tooltip="FastAPI"><i class="fas fa-server"></i></div>
-                <div class="tech-icon" data-tooltip="Docker"><i class="fab fa-docker"></i></div>
-                <div class="tech-icon" data-tooltip="PHP"><i class="fab fa-php"></i></div>
-                <div class="tech-icon" data-tooltip="Laravel"><i class="fab fa-laravel"></i></div>
-                <div class="tech-icon" data-tooltip="JavaScript"><i class="fab fa-js-square"></i></div>
-                <div class="tech-icon" data-tooltip="Vue.js"><i class="fab fa-vuejs"></i></div>
-                <div class="tech-icon" data-tooltip="MySQL"><i class="fas fa-database"></i></div>
-                <div class="tech-icon" data-tooltip="Git"><i class="fab fa-git-alt"></i></div>
+            
+            <div class="tech-category">
+                <h3 class="category-title">Backend & Lógica Core</h3>
+                <div class="tech-icons">
+                    <div class="tech-icon" data-tooltip="Python"><i class="devicon-python-plain"></i></div>
+                    <div class="tech-icon" data-tooltip="FastAPI"><i class="devicon-fastapi-plain"></i></div>
+                    <div class="tech-icon" data-tooltip="PHP"><i class="devicon-php-plain"></i></div>
+                    <div class="tech-icon" data-tooltip="Laravel"><i class="devicon-laravel-plain"></i></div>
+                </div>
+            </div>
+
+            <div class="tech-category">
+                <h3 class="category-title">Frontend & Interfaces</h3>
+                <div class="tech-icons">
+                    <div class="tech-icon" data-tooltip="JavaScript"><i class="devicon-javascript-plain"></i></div>
+                    <div class="tech-icon" data-tooltip="TypeScript"><i class="devicon-typescript-plain"></i></div>
+                    <div class="tech-icon" data-tooltip="Vue.js"><i class="devicon-vuejs-plain"></i></div>
+                </div>
+            </div>
+
+            <div class="tech-category">
+                <h3 class="category-title">Datos, Infraestructura & Despliegue</h3>
+                <div class="tech-icons">
+                    <div class="tech-icon" data-tooltip="PostgreSQL"><i class="devicon-postgresql-plain"></i></div>
+                    <div class="tech-icon" data-tooltip="MySQL"><i class="devicon-mysql-plain"></i></div>
+                    <div class="tech-icon" data-tooltip="Ubuntu Linux"><i class="devicon-ubuntu-plain"></i></div>
+                    <div class="tech-icon" data-tooltip="Docker"><i class="devicon-docker-plain"></i></div>
+                    <div class="tech-icon" data-tooltip="Git"><i class="devicon-git-plain"></i></div>
+                </div>
             </div>
         </section>
 
