@@ -1,4 +1,19 @@
 /* =========================================
+   OCULTAR BARRA DE SCROLL (Estética Limpia)
+   ========================================= */
+/* Para Chrome, Safari y versiones nuevas de Edge */
+body::-webkit-scrollbar,
+html::-webkit-scrollbar {
+    display: none;
+}
+
+/* Para Firefox y versiones legacy de IE/Edge */
+html, body {
+    scrollbar-width: none;  /* Firefox */
+    -ms-overflow-style: none;  /* IE y Edge */
+}
+
+/* =========================================
    1. VARIABLES Y RESETEO
    ========================================= */
 :root {
@@ -13,7 +28,7 @@
 
     --font-primary: 'Montserrat', sans-serif;
     --font-secondary: 'Open Sans', sans-serif;
-    
+
     --box-shadow-light: rgba(159, 16, 16, 0.2);
     --box-shadow-strong: rgba(159, 16, 16, 0.5);
 }
@@ -129,17 +144,40 @@ body {
 /* =========================================
    3. NAVBAR
    ========================================= */
+/* La barra principal con altura estricta y sin padding vertical */
 .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1.5rem 5%;
+    padding: 0 5%; /* 0 relleno arriba y abajo, solo a los lados */
+    height: 70px; /* Altura fija inicial, delgada y controlada */
     background-color: transparent;
     position: fixed;
     width: 100%;
     top: 0;
     z-index: 1000;
-    transition: background-color 0.4s ease, box-shadow 0.4s ease;
+    transition: background-color 0.4s ease, box-shadow 0.4s ease, height 0.4s ease;
+}
+
+/* El efecto al hacer scroll: la barra se hace AÚN MÁS DELGADA */
+.navbar.scrolled {
+    background-color: rgba(18, 18, 18, 0.95);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 2px 15px rgba(0,0,0,0.8);
+    height: 55px; /* Se encoge a 55px para liberar pantalla */
+}
+
+/* El logo ajustado para respirar dentro de la nueva barra */
+.logo img {
+    height: 48px; /* Tamaño optimizado */
+    width: auto;
+    transition: transform 0.3s ease, height 0.4s ease;
+    filter: drop-shadow(0px 2px 5px rgba(159, 16, 16, 0.3));
+}
+
+/* Hacemos que el logo también se encoja proporcionalmente al hacer scroll */
+.navbar.scrolled .logo img {
+    height: 38px;
 }
 
 .navbar.scrolled {
@@ -149,21 +187,50 @@ body {
 }
 
 .logo {
-    font-family: var(--font-primary);
-    font-size: 2rem;
-    font-weight: 900;
-    color: var(--text-logo);
-    letter-spacing: 1px;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+.logo img {
+    height: 55px; /* Tamaño equilibrado para no expandir la barra */
+    width: auto;
+    transition: transform 0.3s ease;
+    filter: drop-shadow(0px 2px 5px rgba(159, 16, 16, 0.3));
+}
+
+.logo:hover img {
+    transform: scale(1.05);
+}
+
+/* Ocultamos el logo del menú móvil en pantallas grandes */
+.mobile-logo {
+    display: none;
 }
 
 .nav-links {
     list-style: none;
     display: flex;
+    align-items: center; /* Esto fuerza a que los textos se alineen al centro del logo */
+    margin: 0;
 }
 
 .nav-links li {
     margin-left: 2.5rem;
 }
+
+/* Mostramos y damos estilo al logo dentro del menú hamburguesa */
+    .mobile-logo {
+        display: block !important;
+        margin: 0 0 2rem 0 !important;
+        opacity: 0; /* Se mantiene en 0 para que tu app.js lo anime al abrir el menú */
+    }
+
+    .mobile-logo img {
+        height: 85px; /* Tamaño del logo dentro del menú móvil */
+        width: auto;
+        filter: drop-shadow(0px 4px 10px rgba(159, 16, 16, 0.4)); /* Resplandor guinda sutil */
+    }
 
 .nav-links a {
     text-decoration: none;
