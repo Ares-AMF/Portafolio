@@ -1,295 +1,191 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es" class="no-js">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <title>Ares Arturo Molina Franco | Arquitecto de Software e IA</title>
-    
-    <link rel="icon" type="image/png" href="AFAS_Normal.png">
-
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
-    
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ares Molina — CTO de Chúuk · Software & IA</title>
+  <meta name="description" content="Ares Arturo Molina Franco, CTO de Chúuk. Construyo productos de software e IA que funcionan en el mundo físico: campo, laboratorio y almacén.">
+  <meta name="theme-color" content="#0c0c0e">
+  <meta property="og:title" content="Ares Molina — CTO de Chúuk">
+  <meta property="og:description" content="Productos de software e IA de 0 a 1: AgriTech, LabSnap, MicroOV y más.">
+  <meta property="og:image" content="https://ares-amf.github.io/Portafolio/ares-og.jpg">
+  <meta property="og:type" content="website">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600&family=Geist+Mono:wght@400;500&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header class="hero">
-        <nav class="navbar">
-            <a href="#" class="logo" aria-label="Inicio">
-                <img src="AFAS_Normal.png" alt="Logo AFAS">
-            </a>
-            <ul class="nav-links">
-                <li class="mobile-logo"><img src="AFAS_Normal.png" alt="Logo AFAS"></li>
-                
-                <li><a href="#sobre-mi">Sobre Mí</a></li>
-                <li><a href="#proyectos">Proyectos</a></li>
-                <li><a href="#herramientas">Herramientas</a></li>
-                <li><a href="#tecnologias">Tecnologías</a></li>
-                <li><a href="#contacto">Contacto</a></li>
-            </ul>
-            <div class="burger">
-                <div class="line1"></div>
-                <div class="line2"></div>
-                <div class="line3"></div>
-            </div>
-        </nav>
-        <div class="hero-content">
-            <h1 id="main-title">Ares Arturo Molina Franco</h1>
-            
-            <p id="subtitle">Arquitecto de Software e IA | De la Idea al Producto Full-Stack</p>
-            
-            <a href="#proyectos" class="cta-button">Ver Mis Proyectos <i class="fas fa-arrow-right"></i></a>
+  <a class="skip" href="#trabajo">Saltar al contenido</a>
+
+  <header class="nav" id="nav">
+    <a href="#top" class="nav-brand mono">ares<span class="dim">@chúuk</span> <span class="caret">~$</span></a>
+    <button class="nav-toggle" aria-expanded="false" aria-controls="menu" aria-label="Abrir menú">
+      <span></span><span></span>
+    </button>
+    <nav id="menu" class="nav-links">
+      <a href="#trabajo">Trabajo</a>
+      <a href="#open-source">Open source</a>
+      <a href="#sobre-mi">Sobre mí</a>
+      <a href="#contacto" class="nav-cta">Colaboremos</a>
+    </nav>
+  </header>
+
+  <main id="top">
+    <!-- HERO -->
+    <section class="hero wrap">
+      <div class="hero-text">
+        <p class="eyebrow mono"><span class="dot"></span> CTO de Chúuk · Chihuahua, MX</p>
+        <h1>Software e IA que <em>salen de la pantalla</em> y funcionan en el campo, el laboratorio y el almacén.</h1>
+        <p class="lead">Soy Ares Molina. Dirijo la tecnología de Chúuk y construyo productos de 0 a 1: visión por computadora que corre sin internet, sistemas clínicos con respaldo corporativo y herramientas pequeñas que hacen una cosa muy bien.</p>
+        <div class="hero-actions">
+          <a href="#trabajo" class="btn btn-primary">Ver proyectos <span aria-hidden="true">→</span></a>
+          <a href="https://github.com/Ares-AMF" class="btn btn-ghost" target="_blank" rel="noopener">GitHub</a>
         </div>
-        <div id="particles-js"></div>
-    </header>
+      </div>
 
-    <main>
-        <section id="sobre-mi" class="section">
-            <h2>Sobre Mí</h2>
-            <div class="sobre-mi-container">
-                <img src="ares-photo.jpg" alt="Ares Arturo Molina Franco" class="profile-pic">
-                <div class="sobre-mi-texto">
-                    
-                    <h3>Arquitecto de Soluciones y Líder Técnico</h3>
-                    <p>Soy un <strong>Arquitecto de Software</strong> con un enfoque de 'Artesano': mi especialidad es el desarrollo de soluciones full-stack y mi obsesión es entregar productos 'pulidos' con una alta exigencia estética y funcional.</p>
-                    <p>Mi filosofía de trabajo es la <strong>'Libertad Estructurada'</strong>: ofrezco liderazgo técnico y autonomía para construir la mejor solución, dentro de un marco de propósito y revisiones claras. No solo entrego código; entrego un producto robusto y bien pensado.</p>
-                </div>
-            </div>
-        </section>
+      <figure class="hero-card" aria-label="Terminal con resumen">
+        <div class="term-bar"><i></i><i></i><i></i><span class="mono">ares@chúuk ~ whoami</span></div>
+        <img src="ares.webp" alt="Retrato de Ares Molina" width="660" height="806" fetchpriority="high">
+        <pre class="term-body mono" aria-hidden="true"><span class="p">$</span> <span id="typed"></span><span class="cursor">▍</span></pre>
+      </figure>
+    </section>
 
-        <section id="proyectos" class="section">
-            <h2>Proyectos Destacados</h2>
-            <p class="section-subtitle">Un vistazo a la arquitectura, ejecución y resolución de problemas en proyectos reales.</p>
-            
-            <div class="project-accordion">
+    <!-- PROOF STRIP -->
+    <section class="proof wrap" aria-label="Logros">
+      <div><strong>1.<sup>er</sup> lugar</strong><span>absoluto, FECI 2025</span></div>
+      <div><strong>5</strong><span>productos en Chúuk</span></div>
+      <div><strong>min → s</strong><span>análisis microscópico con IA</span></div>
+      <div><strong>0</strong><span>dependencia de la nube en AgriTech</span></div>
+    </section>
 
-                <div class="project-item">
-                    <button class="project-header">
-                        <div class="project-header-title">
-                            <h3>AgriTech (Chúuk)</h3>
-                            <span class="project-summary">Plataforma de agricultura de precisión con IA (YOLOv8n) y Edge Computing puro.</span>
-                            <div class="award-badge">
-                                <i class="fas fa-check-circle"></i> Producto Validado - FEMECI 2026
-                            </div>
-                        </div>
-                        <i class="fas fa-chevron-down"></i>
-                    </button>
-                    <div class="project-content">
-                        
-                        <p><strong>Validación Comercial e Institucional:</strong> Tras su presentación destacada en la FEMECI, el proyecto demostró madurez operativa. Actualmente en fase de planeación de despliegues físicos (Abril 2026) en parcelas del municipio y bajo evaluación por firmas tecnológicas internacionales.</p>
-                        <p><strong>El Problema de Negocio:</strong> La industria agrícola sufre <strong>pérdidas de más del 30%</strong> por detección tardía de plagas, frecuentemente en zonas rurales sin infraestructura de red ni conexión a internet.</p>
-                        <p><strong>Mi Solución (Edge Computing Puro):</strong> Lideré la migración de la infraestructura hacia un modelo de procesamiento local. Un servidor asíncrono (FastAPI) y un modelo de IA procesan datos de hardware comercial de manera nativa y autónoma en el campo, eliminando la dependencia de la nube.</p>
-                        <p><strong>El Valor (Impacto Real):</strong> El sistema dejó de ser un prototipo para convertirse en una herramienta lista para generar impacto socioeconómico directo en la tierra, entregando métricas críticas de optimización sin latencia de red.</p>
-                        
-                        <div class="project-tags">
-                            <span>FastAPI</span>
-                            <span>Python</span>
-                            <span>YOLOv8n</span>
-                            <span>Edge Computing</span>
-                            <span>Offline IoT</span>
-                            <span>Arquitectura de Hardware</span>
-                        </div>
-                    </div>
-                </div>
+    <!-- WORK -->
+    <section id="trabajo" class="section wrap">
+      <div class="section-head">
+        <p class="eyebrow mono">01 — Trabajo</p>
+        <h2>Productos de Chúuk</h2>
+        <p class="section-sub">Cada uno empezó con un problema de negocio concreto. Aquí está el problema, lo que construí y lo que cambió.</p>
+      </div>
 
-                <div class="project-item">
-                    <button class="project-header">
-                        <div class="project-header-title">
-                            <h3>CellyApp (Chúuk)</h3>
-                            <span class="project-summary">Aplicación multiplataforma (Escritorio/Android) basada en arquitectura Chromium.</span>
-                        </div>
-                        <i class="fas fa-chevron-down"></i>
-                    </button>
-                    <div class="project-content">
-                        
-                        <p><strong>El Problema de Negocio:</strong> Mantener bases de código separadas para aplicaciones de escritorio (Windows/Mac) y móviles (Android) duplica los tiempos y costos de desarrollo, además de fragmentar la interfaz.</p>
-                        <p><strong>Mi Solución (Desarrollo Multiplataforma):</strong> Diseño y desarrollo de una aplicación construida sobre un framework basado en <strong>Chromium</strong> (arquitectura similar a Discord). Esto me permite compartir el núcleo lógico y la UI, empaquetándola de forma nativa para ambos entornos.</p>
-                        <p><strong>El Valor (Escalabilidad):</strong> Despliegue ágil de nuevas características en ecosistemas de escritorio y Android simultáneamente, garantizando una experiencia de usuario estandarizada y reduciendo radicalmente el tiempo de mantenimiento.</p>
+      <article class="case case-feature reveal">
+        <div class="case-meta">
+          <span class="tag tag-hot mono">Validado · FECI 2025</span>
+          <h3>AgriTech</h3>
+          <p class="case-one">Agricultura de precisión con IA que corre en el campo, sin internet.</p>
+          <ul class="chips mono"><li>FastAPI</li><li>YOLOv8n</li><li>Edge computing</li><li>IoT offline</li></ul>
+        </div>
+        <dl class="case-body">
+          <div><dt class="mono">Problema</dt><dd>La detección tardía de plagas causa pérdidas de más del 30 %, sobre todo en zonas rurales sin red.</dd></div>
+          <div><dt class="mono">Solución</dt><dd>Migré todo a procesamiento local: un servidor asíncrono y un modelo YOLOv8n que corren en hardware comercial directamente en la parcela.</dd></div>
+          <div><dt class="mono">Impacto</dt><dd>Pasó de prototipo a herramienta lista para campo: métricas críticas sin latencia de red. Despliegue en parcelas reales en 2026.</dd></div>
+        </dl>
+      </article>
 
-                        <div class="project-tags">
-                            <span>JavaScript</span>
-                            <span>TypeScript</span>
-                            <span>Chromium</span>
-                            <span>App Android</span>
-                            <span>App Escritorio</span>
-                        </div>
-                    </div>
-                </div>
+      <div class="case-grid">
+        <article class="case reveal">
+          <span class="tag mono">B2B · Salud</span>
+          <h3>LabSnap</h3>
+          <p class="case-one">Sistema de gestión de laboratorio (LIS) para más de 22 tipos de estudios clínicos.</p>
+          <p>Diseñé la arquitectura y el esquema relacional. Hoy lidero la integración de cálculos bioquímicos en tiempo real junto a ingenieros de <strong>Adaca Medical</strong>. El proyecto aseguró inversión corporativa inicial.</p>
+          <ul class="chips mono"><li>Laravel</li><li>Vue</li><li>PostgreSQL</li><li>Tailwind</li></ul>
+        </article>
 
-                <div class="project-item">
-                    <button class="project-header">
-                        <div class="project-header-title">
-                            <h3>LabSnap (Chúuk)</h3>
-                            <span class="project-summary">Sistema integral de gestión de laboratorio (LIS) con respaldo corporativo.</span>
-                        </div>
-                        <i class="fas fa-chevron-down"></i>
-                    </button>
-                    <div class="project-content">
-                        
-                        <p><strong>El Reto Empresarial:</strong> Modernizar y automatizar la captura de más de 22 tipos de estudios clínicos, garantizando la trazabilidad, cálculos precisos en tiempo real y la integridad de los datos médicos.</p>
-                        <p><strong>Mi Solución (Arquitectura B2B):</strong> Dirigí el desarrollo de la plataforma y el diseño del esquema de base de datos relacional. Actualmente lidero el proyecto en colaboración con ingenieros de <strong>Adaca Medical</strong> para integrar cálculos bioquímicos dinámicos directamente en la interfaz.</p>
-                        <p><strong>El Valor (Validación Comercial):</strong> El rigor técnico de la plataforma logró asegurar una inversión inicial corporativa, demostrando mi capacidad para ejecutar arquitecturas de grado empresarial.</p>
+        <article class="case reveal">
+          <span class="tag mono">IA · Laboratorio</span>
+          <h3>MicroOV</h3>
+          <p class="case-one">Análisis microscópico en tiempo real, guiado por IA.</p>
+          <p>YOLOv8 detecta automáticamente y un asistente con GPT-4 guía al personal no experto. El análisis pasa <strong>de minutos a segundos</strong> y un analista junior puede hacer el trabajo de un senior.</p>
+          <ul class="chips mono"><li>FastAPI</li><li>YOLOv8</li><li>GPT-4</li><li>JavaScript</li></ul>
+        </article>
 
-                        <div class="project-tags">
-                            <span>Laravel</span>
-                            <span>Vue.js</span>
-                            <span>MySQL / PostgreSQL</span>
-                            <span>TailwindCSS</span>
-                            <span>Arquitectura B2B</span>
-                        </div>
-                    </div>
-                </div>
+        <article class="case reveal">
+          <span class="tag mono">Logística</span>
+          <h3>Smart-FIFO</h3>
+          <p class="case-one">Inventario con rotación FIFO garantizada, códigos QR y mapa del almacén.</p>
+          <p>El sistema elige el lote correcto y guía el despacho en un mapa visual. Elimina mermas por caducidad y reduce errores humanos.</p>
+          <ul class="chips mono"><li>FastAPI</li><li>Python</li><li>MySQL</li><li>QR</li></ul>
+        </article>
 
-                <div class="project-item">
-                    <button class="project-header">
-                        <div class="project-header-title">
-                            <h3>MicroOV (Chúuk)</h3>
-                            <span class="project-summary">Análisis microscópico en tiempo real asistido por IA (YOLOv8 y GPT-4).</span>
-                        </div>
-                        <i class="fas fa-chevron-down"></i>
-                    </button>
-                    <div class="project-content">
-                        
-                        <p><strong>El Problema de Negocio:</strong> El análisis microscópico es un proceso lento y costoso que depende 100% de un experto en sitio, creando un "cuello de botella" operativo.</p>
-                        <p><strong>Mi Solución (Optimización de Procesos):</strong> Una plataforma web que <strong>democratiza el análisis experto</strong>. Utiliza IA (YOLOv8) para la detección automática y un asistente (GPT-4) para guiar al personal no-experto.</p>
-                        <p><strong>El Valor (Reducción de Costos):</strong> <strong>Reduce el tiempo de análisis de minutos a segundos</strong> y permite que analistas junior realicen tareas de un senior, optimizando radicalmente el flujo de trabajo del laboratorio.</p>
+        <article class="case reveal">
+          <span class="tag mono">Multiplataforma</span>
+          <h3>CellyApp</h3>
+          <p class="case-one">Una base de código para escritorio y Android.</p>
+          <p>Construida sobre Chromium (la misma idea que Discord): núcleo y UI compartidos, empaquetados de forma nativa. Las funciones nuevas llegan a ambas plataformas a la vez.</p>
+          <ul class="chips mono"><li>TypeScript</li><li>Chromium</li><li>Android</li><li>Desktop</li></ul>
+        </article>
+      </div>
+    </section>
 
-                        <div class="project-tags">
-                            <span>FastAPI</span>
-                            <span>Python</span>
-                            <span>YOLOv8</span>
-                            <span>GPT-4 API</span>
-                            <span>JavaScript</span>
-                            <span>TailwindCSS</span>
-                        </div>
-                    </div>
-                </div>
+    <!-- OPEN SOURCE -->
+    <section id="open-source" class="section wrap">
+      <div class="section-head">
+        <p class="eyebrow mono">02 — Open source</p>
+        <h2>Herramientas pequeñas, decisiones explicadas</h2>
+        <p class="section-sub">Cada repo documenta el porqué de sus decisiones de arquitectura, no solo el cómo.</p>
+      </div>
+      <div class="repo-grid">
+        <a class="repo reveal" href="https://github.com/Ares-AMF/eco_fastapi_template" target="_blank" rel="noopener">
+          <span class="repo-path mono">Ares-AMF / <b>eco_fastapi_template</b></span>
+          <p>Plantilla de microservicios de bajo consumo. Serialización con orjson (Rust), uvloop, compresión equilibrada y rate limiting.</p>
+          <span class="repo-foot mono"><i class="lang py"></i>Python <span class="arrow">↗</span></span>
+        </a>
+        <a class="repo reveal" href="https://github.com/Ares-AMF/vanilla_fetcher" target="_blank" rel="noopener">
+          <span class="repo-path mono">Ares-AMF / <b>vanilla_fetcher</b></span>
+          <p>Cliente HTTP de menos de 2 KB. Backoff exponencial, caché con TTL y modo ahorro de datos del navegador.</p>
+          <span class="repo-foot mono"><i class="lang js"></i>JavaScript <span class="arrow">↗</span></span>
+        </a>
+        <a class="repo reveal" href="https://github.com/Ares-AMF/disk-audit-cli" target="_blank" rel="noopener">
+          <span class="repo-path mono">Ares-AMF / <b>disk-audit-cli</b></span>
+          <p>Auditor de disco en paralelo con multiprocessing y os.scandir. Encuentra node_modules, venvs y builds olvidados.</p>
+          <span class="repo-foot mono"><i class="lang py"></i>Python <span class="arrow">↗</span></span>
+        </a>
+      </div>
+    </section>
 
-                <div class="project-item">
-                    <button class="project-header">
-                        <div class="project-header-title">
-                            <h3>Smart-FIFO (Chúuk)</h3>
-                            <span class="project-summary">Gestión de inventarios con lógica FIFO, códigos QR y dashboard en tiempo real.</span>
-                        </div>
-                        <i class="fas fa-chevron-down"></i>
-                    </button>
-                    <div class="project-content">
-                        
-                        <p><strong>El Problema de Negocio:</strong> Una mala rotación de inventario genera enormes mermas por productos caducados y eleva los costos de almacenamiento.</p>
-                        <p><strong>Mi Solución (Optimización de Procesos):</strong> Un sistema que <strong>garantiza digitalmente la rotación FIFO</strong>. La plataforma identifica automáticamente el lote correcto y usa un mapa visual del almacén para agilizar el despacho.</p>
-                        <p><strong>El Valor (Reducción de Costos):</strong> Elimina las mermas por caducidad y reduce los errores humanos, optimizando toda la operación logística del almacén.</p>
+    <!-- ABOUT -->
+    <section id="sobre-mi" class="section wrap about">
+      <div class="section-head">
+        <p class="eyebrow mono">03 — Sobre mí</p>
+        <h2>Ingeniero con mente de <em>artesano</em></h2>
+      </div>
+      <div class="about-grid">
+        <div class="about-text">
+          <p>Estudio Ingeniería en Sistemas Computacionales y soy CTO de Chúuk. Me interesa el punto donde el software se encuentra con la biología: plagas en un cultivo, células en un microscopio, muestras en un laboratorio.</p>
+          <p>Trabajo con lo que llamo <strong>libertad estructurada</strong>: autonomía para encontrar la mejor solución, dentro de un propósito claro y revisiones constantes. Me importa que el producto final se vea y se sienta pulido, no solo que funcione.</p>
+          <p>Fuera del teclado dibujo, escribo y escucho mucha música. Tengo certificaciones de Cisco Networking Academy y Fundación Carlos Slim.</p>
+        </div>
+        <div class="stack">
+          <h3 class="mono">stack.json</h3>
+          <dl>
+            <div><dt>Backend</dt><dd>Python · FastAPI · PHP · Laravel</dd></div>
+            <div><dt>Frontend</dt><dd>TypeScript · Vue · Tailwind</dd></div>
+            <div><dt>IA</dt><dd>YOLOv8 · PyTorch · APIs de LLM</dd></div>
+            <div><dt>Datos</dt><dd>PostgreSQL · MySQL</dd></div>
+            <div><dt>Infra</dt><dd>Docker · Linux · Edge · Git</dd></div>
+          </dl>
+        </div>
+      </div>
+    </section>
 
-                        <div class="project-tags">
-                            <span>FastAPI</span>
-                            <span>Python</span>
-                            <span>JavaScript</span>
-                            <span>Lógica FIFO</span>
-                            <span>MySQL</span>
-                        </div>
-                    </div>
-                </div>
+    <!-- CONTACT -->
+    <section id="contacto" class="section wrap contact reveal">
+      <p class="eyebrow mono">04 — Contacto</p>
+      <h2>Siempre abierto a <em>colaborar</em>.</h2>
+      <p class="section-sub">¿Tienes un problema difícil de software, IA o datos? Cuéntamelo.</p>
+      <div class="contact-links">
+        <a class="btn btn-primary" href="mailto:arturo.franco1406@mail.com">arturo.franco1406@mail.com</a>
+        <a class="btn btn-ghost" href="https://www.linkedin.com/in/ares-arturo-molina-franco-4883aa35a" target="_blank" rel="noopener">LinkedIn ↗</a>
+        <a class="btn btn-ghost" href="https://github.com/Ares-AMF" target="_blank" rel="noopener">GitHub ↗</a>
+      </div>
+    </section>
+  </main>
 
-            </div>
-        </section>
+  <footer class="wrap footer mono">
+    <span>© <span id="year">2026</span> Ares Arturo Molina Franco</span>
+    <span class="dim">Hecho a mano, sin frameworks.</span>
+  </footer>
 
-        <section id="herramientas" class="section">
-            <h2>Ingeniería & Open Source</h2>
-            <p class="section-subtitle">No solo construyo aplicaciones; diseño las herramientas que hacen el software más eficiente, resiliente y escalable.</p>
-            
-            <div class="tools-grid">
-                
-                <div class="tool-card">
-                    <div class="tool-header">
-                        <h3>Eco-FastAPI Template</h3>
-                        <i class="fas fa-leaf tool-icon"></i>
-                    </div>
-                    <p class="tool-desc">Arquitectura base para microservicios optimizada para "Green Coding". Utiliza serialización híbrida (Rust/orjson) y uvloop para reducir el consumo de RAM/CPU y latencia.</p>
-                    <p class="tool-tech">Stack: Python, FastAPI, Rust (orjson), Docker</p>
-                    <a href="https://github.com/Ares-AMF/eco_fastapi_template" target="_blank" class="btn-github">
-                        <i class="fab fa-github"></i> Ver Código / Repo
-                    </a>
-                </div>
-
-                <div class="tool-card">
-                    <div class="tool-header">
-                        <h3>Vanilla Fetcher</h3>
-                        <i class="fas fa-wifi tool-icon"></i>
-                    </div>
-                    <p class="tool-desc">Cliente HTTP ultraligero (<2KB) enfocado en la resiliencia de red. Implementa "Exponential Backoff" para reintentos y detección de "Saver Mode" del navegador.</p>
-                    <p class="tool-tech">Stack: JavaScript (ES6+), Zero-Dependencies</p>
-                    <a href="https://github.com/Ares-AMF/vanilla_fetcher" target="_blank" class="btn-github">
-                        <i class="fab fa-github"></i> Ver Código / Repo
-                    </a>
-                </div>
-
-                <div class="tool-card">
-                    <div class="tool-header">
-                        <h3>Disk Audit CLI</h3>
-                        <i class="fas fa-hdd tool-icon"></i>
-                    </div>
-                    <p class="tool-desc">Auditor de disco de alto rendimiento. Utiliza `multiprocessing` para paralelizar I/O y `os.scandir` para minimizar llamadas al sistema, detectando "bloatware" de desarrollo (node_modules, venv).</p>
-                    <p class="tool-tech">Stack: Python, Multiprocessing, Syscalls</p>
-                    <a href="https://github.com/Ares-AMF/disk-audit-cli" target="_blank" class="btn-github">
-                        <i class="fab fa-github"></i> Ver Código / Repo
-                    </a>
-                </div>
-
-            </div>
-        </section>
-        
-        <section id="tecnologias" class="section">
-            <h2>Tecnologías Principales</h2>
-            
-            <div class="tech-category">
-                <h3 class="category-title">Backend & Lógica Core</h3>
-                <div class="tech-icons">
-                    <div class="tech-icon" data-tooltip="Python"><i class="devicon-python-plain"></i></div>
-                    <div class="tech-icon" data-tooltip="FastAPI"><i class="devicon-fastapi-plain"></i></div>
-                    <div class="tech-icon" data-tooltip="PHP"><i class="devicon-php-plain"></i></div>
-                    <div class="tech-icon" data-tooltip="Laravel"><i class="devicon-laravel-plain"></i></div>
-                </div>
-            </div>
-
-            <div class="tech-category">
-                <h3 class="category-title">Frontend & Interfaces</h3>
-                <div class="tech-icons">
-                    <div class="tech-icon" data-tooltip="JavaScript"><i class="devicon-javascript-plain"></i></div>
-                    <div class="tech-icon" data-tooltip="TypeScript"><i class="devicon-typescript-plain"></i></div>
-                    <div class="tech-icon" data-tooltip="Vue.js"><i class="devicon-vuejs-plain"></i></div>
-                </div>
-            </div>
-
-            <div class="tech-category">
-                <h3 class="category-title">Datos, Infraestructura & Despliegue</h3>
-                <div class="tech-icons">
-                    <div class="tech-icon" data-tooltip="PostgreSQL"><i class="devicon-postgresql-plain"></i></div>
-                    <div class="tech-icon" data-tooltip="MySQL"><i class="devicon-mysql-plain"></i></div>
-                    <div class="tech-icon" data-tooltip="Ubuntu Linux"><i class="devicon-ubuntu-plain"></i></div>
-                    <div class="tech-icon" data-tooltip="Docker"><i class="devicon-docker-plain"></i></div>
-                    <div class="tech-icon" data-tooltip="Git"><i class="devicon-git-plain"></i></div>
-                </div>
-            </div>
-        </section>
-
-        <section id="contacto" class="section">
-            <h2>Hablemos</h2>
-            <p>Estoy disponible para consultoría técnica o roles de liderazgo en desarrollo. ¿Tienes un problema complejo de optimización? Hablemos.</p>
-            <div class="social-icons">
-                <a href="https://www.linkedin.com/in/ares-arturo-molina-franco-4883aa35a" target="_blank" aria-label="LinkedIn" data-tooltip="LinkedIn"><i class="fab fa-linkedin"></i></a>
-                <a href="https://github.com/Ares-AMF" target="_blank" aria-label="Github" data-tooltip="GitHub"><i class="fab fa-github"></i></a>
-                <a href="mailto:arturo.franco1406@mail.com" target="_blank" aria-label="Email" data-tooltip="Email"><i class="fas fa-envelope"></i></a>
-            </div>
-            </section>
-    </main>
-
-    <footer>
-        <p>&copy; <span id="currentYear"></span> Ares Arturo Molina Franco. Creado con pasión y código.</p>
-    </footer>
-
-    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
-    <script src="app.js"></script>
+  <script src="app.js" defer></script>
 </body>
 </html>
