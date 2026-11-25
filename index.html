@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Ares A.M.F. — CTO de Chúuk · Software & IA</title>
   <meta name="description" content="Ares A.M.F., CTO de Chúuk. Construyo productos de software e IA que funcionan en el mundo físico: campo, laboratorio y almacén.">
-  <meta name="theme-color" content="#0c0c0e">
+  <meta name="theme-color" content="#050505">
   <meta property="og:title" content="Ares A.M.F. — CTO de Chúuk">
   <meta property="og:description" content="Productos de software e IA de 0 a 1: AgriTech, LabSnap, MicroOV y más.">
   <meta property="og:image" content="https://ares-amf.github.io/Portafolio/ares-og.jpg">
@@ -13,179 +13,392 @@
   <link rel="icon" href="favicon.svg" type="image/svg+xml">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600&family=Geist+Mono:wght@400;500&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Doto:wght@500;700;900&family=Geist:wght@400;500;600&family=Geist+Mono:wght@400;500&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <a class="skip" href="#trabajo">Saltar al contenido</a>
+  <!-- Iconos (trazo lineal) -->
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <defs>
+      <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M7 17 17 7M8 7h9v9"/></symbol>
+      <symbol id="i-arrow-r" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></symbol>
+      <symbol id="i-chevron" viewBox="0 0 24 24"><path d="m6 9 6 6 6-6"/></symbol>
+      <symbol id="i-mail" viewBox="0 0 24 24"><rect x="2.5" y="4.5" width="19" height="15" rx="2.5"/><path d="m3 7 9 6 9-6"/></symbol>
+      <symbol id="i-pin" viewBox="0 0 24 24"><path d="M12 21.5s7-6.1 7-11.5a7 7 0 1 0-14 0c0 5.4 7 11.5 7 11.5Z"/><circle cx="12" cy="10" r="2.5"/></symbol>
+      <symbol id="i-copy" viewBox="0 0 24 24"><rect x="9" y="9" width="12" height="12" rx="2.5"/><path d="M5 15H4.5A2.5 2.5 0 0 1 2 12.5v-8A2.5 2.5 0 0 1 4.5 2h8A2.5 2.5 0 0 1 15 4.5V5"/></symbol>
+      <symbol id="i-check" viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></symbol>
+      <symbol id="i-sprout" viewBox="0 0 24 24"><path d="M7 21h10M12 21v-9M12 12c0-4.4 3-7.5 8-7.5 0 4.4-3 7.5-8 7.5ZM12 14.5c0-3.3-2.3-5.5-6.5-5.5 0 3.3 2.3 5.5 6.5 5.5Z"/></symbol>
+      <symbol id="i-flask" viewBox="0 0 24 24"><path d="M9 2.5h6M10 2.5v6.5L4.6 18.7A1.6 1.6 0 0 0 6 21h12a1.6 1.6 0 0 0 1.4-2.3L14 9V2.5M7.2 15h9.6"/></symbol>
+      <symbol id="i-scope" viewBox="0 0 24 24"><circle cx="11" cy="11" r="6.5"/><path d="m20.5 20.5-4.9-4.9M11 8v6M8 11h6"/></symbol>
+      <symbol id="i-box" viewBox="0 0 24 24"><path d="M21 7.5 12 2.8 3 7.5v9l9 4.7 9-4.7v-9Z"/><path d="m3 7.5 9 4.8 9-4.8M12 12.3v8.9"/></symbol>
+      <symbol id="i-devices" viewBox="0 0 24 24"><rect x="2" y="4" width="14" height="10" rx="1.8"/><path d="M6 18h6M9 14v4"/><rect x="17.5" y="8" width="4.5" height="12" rx="1.4"/></symbol>
+      <symbol id="i-leaf" viewBox="0 0 24 24"><path d="M11 20a7 7 0 0 1-1.2-13.9C15.5 5 17 4.5 19 2c1 2 2 4.2 2 8 0 5.5-4.8 10-10 10Z"/><path d="M2.5 21.5c0-3 1.9-5.4 5.1-6"/></symbol>
+      <symbol id="i-wifi" viewBox="0 0 24 24"><path d="M2 8.8a15 15 0 0 1 20 0M5.2 12.4a10 10 0 0 1 13.6 0M8.6 15.9a5 5 0 0 1 6.8 0"/><circle cx="12" cy="19.4" r=".6"/></symbol>
+      <symbol id="i-disk" viewBox="0 0 24 24"><path d="M22 12H2M5.4 5h13.2L22 12v6a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2v-6l3.4-7Z"/><circle cx="6" cy="16" r=".6"/><circle cx="9.5" cy="16" r=".6"/></symbol>
+      <symbol id="i-search" viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="m20.5 20.5-4.3-4.3"/></symbol>
+      <symbol id="i-pen" viewBox="0 0 24 24"><path d="M12 20h9M16.5 3.5a2.1 2.1 0 0 1 3 3L7 19l-4 1 1-4Z"/></symbol>
+      <symbol id="i-code" viewBox="0 0 24 24"><path d="m16 18 6-6-6-6M8 6l-6 6 6 6"/></symbol>
+      <symbol id="i-shield" viewBox="0 0 24 24"><path d="M12 21.5s8-3.8 8-10V5l-8-3-8 3v6.5c0 6.2 8 10 8 10Z"/><path d="m9 11.5 2 2 4-4"/></symbol>
+      <symbol id="i-rocket" viewBox="0 0 24 24"><path d="M4.5 16.5c-1.5 1.3-2 5-2 5s3.7-.5 5-2a2 2 0 0 0-3-3ZM12 15l-3-3c1.5-4.3 4.5-9.5 13-10-.5 8.5-5.7 11.5-10 13ZM9 12H4.5s.6-3.2 2.2-4.2C8.3 6.8 11.5 8 11.5 8M12 15v4.5s3.2-.6 4.2-2.2c1-1.6-.2-4.8-.2-4.8"/></symbol>
+      <symbol id="i-trophy" viewBox="0 0 24 24"><path d="M8 21h8M12 17v4M7 3.5h10V9a5 5 0 0 1-10 0V3.5ZM17 5h3v1.5A3.5 3.5 0 0 1 16.5 10M7 5H4v1.5A3.5 3.5 0 0 0 7.5 10"/></symbol>
+      <symbol id="i-target" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="5"/><circle cx="12" cy="12" r="1"/></symbol>
+      <symbol id="i-bulb" viewBox="0 0 24 24"><path d="M9 18h6M10 21.5h4M12 2.5a6.5 6.5 0 0 0-4 11.6V16h8v-1.9a6.5 6.5 0 0 0-4-11.6Z"/></symbol>
+      <symbol id="i-chart" viewBox="0 0 24 24"><path d="M3 3v18h18"/><path d="m7 15 4-4 3 3 6-7"/></symbol>
+      <symbol id="i-user" viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4 21a8 8 0 0 1 16 0"/></symbol>
+      <symbol id="i-layers" viewBox="0 0 24 24"><path d="m12 2.5 10 5-10 5-10-5 10-5Z"/><path d="m2 12 10 5 10-5M2 16.5l10 5 10-5"/></symbol>
+      <symbol id="i-cpu" viewBox="0 0 24 24"><rect x="5" y="5" width="14" height="14" rx="2"/><rect x="9" y="9" width="6" height="6" rx=".8"/><path d="M9 2v3M15 2v3M9 19v3M15 19v3M2 9h3M2 15h3M19 9h3M19 15h3"/></symbol>
+      <symbol id="i-send" viewBox="0 0 24 24"><path d="M21.5 2.5 10.5 13.5M21.5 2.5l-7 19-4-8-8-4 19-7Z"/></symbol>
+      <symbol id="i-spark" viewBox="0 0 24 24"><path d="M12 2.5c.6 5 4.5 8.9 9.5 9.5-5 .6-8.9 4.5-9.5 9.5-.6-5-4.5-8.9-9.5-9.5 5-.6 8.9-4.5 9.5-9.5Z"/></symbol>
+      <symbol id="i-chuuk" viewBox="0 0 1400 1400"><path d="M1194.97 205.03A700 700 0 1 0 700 1400h700v-300H700a400 400 0 1 1 282.84-682.84Z"/><circle cx="1200" cy="800" r="200"/></symbol>
+    </defs>
+  </svg>
 
+  <a class="skip" href="#proyectos">Saltar al contenido</a>
+  <div class="progress" aria-hidden="true"><span id="progress"></span></div>
+  <canvas id="dots" aria-hidden="true"></canvas>
+
+  <!-- NAV -->
   <header class="nav" id="nav">
-    <a href="#top" class="nav-brand mono">ares<span class="dim">@chúuk</span> <span class="caret">~$</span></a>
-    <button class="nav-toggle" aria-expanded="false" aria-controls="menu" aria-label="Abrir menú">
-      <span></span><span></span>
-    </button>
-    <nav id="menu" class="nav-links">
-      <a href="#trabajo">Trabajo</a>
-      <a href="#open-source">Open source</a>
-      <a href="#sobre-mi">Sobre mí</a>
-      <a href="#contacto" class="nav-cta">Colaboremos</a>
+    <a href="#inicio" class="brand" aria-label="Inicio">
+      <span class="brand-mark dot-font">A<i class="pd"></i>M<i class="pd"></i>F</span><span class="brand-blink"></span>
+    </a>
+    <nav id="menu" class="nav-links" aria-label="Principal">
+      <a href="#sobre-mi" data-section="sobre-mi"><svg class="ic"><use href="#i-user"/></svg>Sobre mí</a>
+      <a href="#proyectos" data-section="proyectos"><svg class="ic"><use href="#i-layers"/></svg>Proyectos</a>
+      <a href="#herramientas" data-section="herramientas"><svg class="ic"><use href="#i-code"/></svg>Open source</a>
+      <a href="#tecnologias" data-section="tecnologias"><svg class="ic"><use href="#i-cpu"/></svg>Tecnologías</a>
+      <a href="#contacto" data-section="contacto" class="nav-cta"><svg class="ic"><use href="#i-send"/></svg>Contacto</a>
     </nav>
+    <div class="nav-clock mono" aria-label="Hora en Chihuahua"><span class="led"></span><span id="clock">CUU --:--</span></div>
+    <button class="nav-toggle" aria-expanded="false" aria-controls="menu" aria-label="Abrir menú"><span></span><span></span></button>
   </header>
 
-  <main id="top">
+  <main id="inicio">
     <!-- HERO -->
     <section class="hero wrap">
+      <p class="hero-bgword dot-font" aria-hidden="true">PORTAFOLIO</p>
+
       <div class="hero-text">
-        <p class="eyebrow mono"><span class="dot"></span> CTO de Chúuk · Chihuahua, MX</p>
-        <h1>Software e IA que <em>salen de la pantalla</em> y funcionan en el campo, el laboratorio y el almacén.</h1>
-        <p class="lead">Soy Ares A.M.F. y dirijo la tecnología de Chúuk y construyo productos de 0 a 1: visión por computadora que corre sin internet, sistemas clínicos con respaldo corporativo y herramientas pequeñas que hacen una cosa muy bien.</p>
+        <p class="label mono"><span class="led led-red"></span>Disponible para colaborar</p>
+        <p class="hello"><em>Hola, soy</em></p>
+        <h1 class="hero-name dot-font" data-scramble="ARES A.M.F." aria-label="Ares A.M.F.">ARES A<i class="pd"></i>M<i class="pd"></i>F<i class="pd"></i></h1>
+        <p class="hero-role mono">CTO @ Chúuk <span class="sep">/</span> Software &amp; IA</p>
+        <p class="hero-lead">Construyo software que <em>sale de la pantalla</em>: visión por computadora que corre sin internet en el campo, sistemas clínicos para laboratorios y herramientas que hacen una cosa muy bien.</p>
         <div class="hero-actions">
-          <a href="#trabajo" class="btn btn-primary">Ver proyectos <span aria-hidden="true">→</span></a>
-          <a href="https://github.com/Ares-AMF" class="btn btn-ghost" target="_blank" rel="noopener">GitHub</a>
+          <a href="#proyectos" class="btn btn-primary magnetic">Ver proyectos <svg class="ic"><use href="#i-arrow-r"/></svg></a>
+          <a href="#contacto" class="btn btn-ghost magnetic">Hablemos <svg class="ic"><use href="#i-arrow"/></svg></a>
+        </div>
+        <ul class="hero-stack" aria-label="Tecnologías principales">
+          <li data-tip="Python"><i class="devicon-python-plain"></i></li>
+          <li data-tip="FastAPI"><i class="devicon-fastapi-plain"></i></li>
+          <li data-tip="Vue.js"><i class="devicon-vuejs-plain"></i></li>
+          <li data-tip="Laravel"><i class="devicon-laravel-original"></i></li>
+          <li data-tip="PyTorch"><i class="devicon-pytorch-original"></i></li>
+          <li data-tip="Docker"><i class="devicon-docker-plain"></i></li>
+        </ul>
+      </div>
+
+      <div class="hero-visual">
+        <figure class="photo" id="photo">
+          <img src="ares.webp" alt="Retrato de Ares A.M.F." width="660" height="806" fetchpriority="high">
+          <span class="photo-dots" aria-hidden="true"></span>
+          <span class="glyph glyph-a" aria-hidden="true"></span>
+          <span class="glyph glyph-b" aria-hidden="true"></span>
+          <figcaption class="mono">pasa el cursor <svg class="ic"><use href="#i-spark"/></svg></figcaption>
+        </figure>
+        <div class="float float-chuuk">
+          <svg class="chuuk"><use href="#i-chuuk"/></svg>
+          <div><span class="mono tiny">CTO</span><strong>Chúuk</strong></div>
+        </div>
+        <div class="float float-award">
+          <svg class="ic ic-red"><use href="#i-trophy"/></svg>
+          <div><span class="mono tiny">FECI 2025</span><strong>1.<sup>er</sup> lugar absoluto</strong></div>
         </div>
       </div>
-
-      <figure class="hero-card" aria-label="Terminal con resumen">
-        <div class="term-bar"><i></i><i></i><i></i><span class="mono">ares@chúuk ~ whoami</span></div>
-        <img src="ares.webp" alt="Retrato de Ares A.M.F." width="660" height="806" fetchpriority="high">
-        <pre class="term-body mono" aria-hidden="true"><span class="p">$</span> <span id="typed"></span><span class="cursor">▍</span></pre>
-      </figure>
     </section>
 
-    <!-- PROOF STRIP -->
-    <section class="proof wrap" aria-label="Logros">
-      <div><strong>1.<sup>er</sup> lugar</strong><span>absoluto, FECI 2025</span></div>
-      <div><strong>5</strong><span>productos en Chúuk</span></div>
-      <div><strong>min → s</strong><span>análisis microscópico con IA</span></div>
-      <div><strong>0</strong><span>dependencia de la nube en AgriTech</span></div>
+    <!-- STATS -->
+    <section class="stats wrap" aria-label="En números">
+      <div class="stat reveal"><span class="dot-font num" data-count="5">0</span><span class="mono tiny">productos en Chúuk</span></div>
+      <div class="stat reveal"><span class="dot-font num" data-count="22" data-suffix="+">0</span><span class="mono tiny">estudios clínicos en LabSnap</span></div>
+      <div class="stat reveal"><span class="dot-font num" data-count="30" data-suffix="%">0</span><span class="mono tiny">de pérdidas que AgriTech ataca</span></div>
+      <div class="stat reveal"><span class="dot-font num" data-count="3">0</span><span class="mono tiny">herramientas open source</span></div>
     </section>
 
-    <!-- WORK -->
-    <section id="trabajo" class="section wrap">
-      <div class="section-head">
-        <p class="eyebrow mono">01 — Trabajo</p>
-        <h2>Productos de Chúuk</h2>
-        <p class="section-sub">Cada uno empezó con un problema de negocio concreto. Aquí está el problema, lo que construí y lo que cambió.</p>
-      </div>
-
-      <article class="case case-feature reveal">
-        <div class="case-meta">
-          <span class="tag tag-hot mono">Validado · FECI 2025</span>
-          <h3>AgriTech</h3>
-          <p class="case-one">Agricultura de precisión con IA que corre en el campo, sin internet.</p>
-          <ul class="chips mono"><li>FastAPI</li><li>YOLOv8n</li><li>Edge computing</li><li>IoT offline</li></ul>
+    <!-- SOBRE MÍ -->
+    <section id="sobre-mi" class="section wrap">
+      <header class="section-head reveal">
+        <p class="label mono"><span class="idx">01</span>Sobre mí</p>
+        <h2>Ingeniero con mente de <em>artesano</em></h2>
+      </header>
+      <div class="about">
+        <div class="about-text reveal">
+          <p>Soy <strong>CTO de Chúuk</strong> y estudio Ingeniería en Sistemas Computacionales en Chihuahua. Me obsesiona entregar productos <strong>pulidos</strong>: que funcionen, que se vean bien y que resistan el mundo real.</p>
+          <p>Me muevo donde el software se cruza con la biología: plagas en un cultivo, células en un microscopio, muestras en un laboratorio.</p>
+          <p>Fuera del teclado dibujo, escribo y escucho mucha música. Certificaciones de Cisco Networking Academy y Fundación Carlos Slim.</p>
         </div>
-        <dl class="case-body">
-          <div><dt class="mono">Problema</dt><dd>La detección tardía de plagas causa pérdidas de más del 30 %, sobre todo en zonas rurales sin red.</dd></div>
-          <div><dt class="mono">Solución</dt><dd>Migré todo a procesamiento local: un servidor asíncrono y un modelo YOLOv8n que corren en hardware comercial directamente en la parcela.</dd></div>
-          <div><dt class="mono">Impacto</dt><dd>Pasó de prototipo a herramienta lista para campo: métricas críticas sin latencia de red. Despliegue en parcelas reales en 2026.</dd></div>
-        </dl>
-      </article>
+        <div class="widget philosophy reveal spot">
+          <p class="label mono"><svg class="ic"><use href="#i-spark"/></svg>Filosofía</p>
+          <p class="quote">Libertad <em>estructurada</em>.</p>
+          <p class="muted">Autonomía para construir la mejor solución, dentro de un propósito claro y revisiones constantes. No entrego solo código: entrego un producto pensado.</p>
+        </div>
+        <div class="widget now reveal spot">
+          <p class="label mono"><span class="led led-red"></span>Ahora mismo</p>
+          <ul>
+            <li><svg class="ic"><use href="#i-sprout"/></svg>Llevando AgriTech a parcelas reales</li>
+            <li><svg class="ic"><use href="#i-flask"/></svg>LabSnap junto a Adaca Medical</li>
+            <li><svg class="ic"><use href="#i-code"/></svg>Herramientas pequeñas y rápidas</li>
+          </ul>
+        </div>
+      </div>
+    </section>
 
-      <div class="case-grid">
-        <article class="case reveal">
-          <span class="tag mono">B2B · Salud</span>
-          <h3>LabSnap</h3>
-          <p class="case-one">Sistema de gestión de laboratorio (LIS) para más de 22 tipos de estudios clínicos.</p>
-          <p>Diseñé la arquitectura y el esquema relacional. Hoy lidero la integración de cálculos bioquímicos en tiempo real junto a ingenieros de <strong>Adaca Medical</strong>. El proyecto aseguró inversión corporativa inicial.</p>
-          <ul class="chips mono"><li>Laravel</li><li>Vue</li><li>PostgreSQL</li><li>Tailwind</li></ul>
+    <!-- PROYECTOS -->
+    <section id="proyectos" class="section wrap">
+      <header class="section-head reveal">
+        <p class="label mono"><span class="idx">02</span>Proyectos destacados</p>
+        <h2>Problemas reales, <em>productos</em> reales</h2>
+        <p class="section-sub">Toca cada tarjeta para ver el problema, lo que construí y el impacto.</p>
+      </header>
+
+      <div class="accordion" id="accordion">
+        <article class="acc reveal spot">
+          <button class="acc-head" aria-expanded="true" aria-controls="p1" id="p1h">
+            <span class="acc-num dot-font">01</span>
+            <span class="acc-icon"><svg class="ic"><use href="#i-sprout"/></svg></span>
+            <span class="acc-title">
+              <span class="acc-name">AgriTech <span class="by mono">Chúuk</span></span>
+              <span class="acc-sum">Agricultura de precisión con IA que corre en el campo, sin internet.</span>
+            </span>
+            <span class="badge mono"><svg class="ic"><use href="#i-trophy"/></svg>Validado · FECI 2025</span>
+            <span class="acc-chev"><svg class="ic"><use href="#i-chevron"/></svg></span>
+          </button>
+          <div class="acc-body" id="p1" role="region" aria-labelledby="p1h">
+            <div class="acc-inner">
+              <div class="pss">
+                <div><p class="pss-k mono"><svg class="ic"><use href="#i-target"/></svg>Problema</p><p>Más del 30 % de pérdidas por detección tardía de plagas, sobre todo en zonas rurales sin red ni internet.</p></div>
+                <div><p class="pss-k mono"><svg class="ic"><use href="#i-bulb"/></svg>Solución</p><p>Migré todo a edge computing: un servidor asíncrono con FastAPI y un modelo YOLOv8n que corren en hardware comercial, directo en la parcela.</p></div>
+                <div><p class="pss-k mono"><svg class="ic"><use href="#i-chart"/></svg>Impacto</p><p>Dejó de ser prototipo: métricas críticas sin latencia de red, con despliegue en parcelas del municipio planeado para 2026.</p></div>
+              </div>
+              <ul class="chips mono"><li>FastAPI</li><li>Python</li><li>YOLOv8n</li><li>Edge computing</li><li>IoT offline</li></ul>
+            </div>
+          </div>
         </article>
 
-        <article class="case reveal">
-          <span class="tag mono">IA · Laboratorio</span>
-          <h3>MicroOV</h3>
-          <p class="case-one">Análisis microscópico en tiempo real, guiado por IA.</p>
-          <p>YOLOv8 detecta automáticamente y un asistente con GPT-4 guía al personal no experto. El análisis pasa <strong>de minutos a segundos</strong> y un analista junior puede hacer el trabajo de un senior.</p>
-          <ul class="chips mono"><li>FastAPI</li><li>YOLOv8</li><li>GPT-4</li><li>JavaScript</li></ul>
+        <article class="acc reveal spot">
+          <button class="acc-head" aria-expanded="false" aria-controls="p2" id="p2h">
+            <span class="acc-num dot-font">02</span>
+            <span class="acc-icon"><svg class="ic"><use href="#i-flask"/></svg></span>
+            <span class="acc-title">
+              <span class="acc-name">LabSnap <span class="by mono">Chúuk</span></span>
+              <span class="acc-sum">Sistema de gestión de laboratorio (LIS) con respaldo corporativo.</span>
+            </span>
+            <span class="badge mono badge-dim">B2B · Salud</span>
+            <span class="acc-chev"><svg class="ic"><use href="#i-chevron"/></svg></span>
+          </button>
+          <div class="acc-body" id="p2" role="region" aria-labelledby="p2h">
+            <div class="acc-inner">
+              <div class="pss">
+                <div><p class="pss-k mono"><svg class="ic"><use href="#i-target"/></svg>Reto</p><p>Automatizar la captura de más de 22 tipos de estudios clínicos con trazabilidad, cálculos en tiempo real e integridad de datos médicos.</p></div>
+                <div><p class="pss-k mono"><svg class="ic"><use href="#i-bulb"/></svg>Solución</p><p>Dirigí la plataforma y el esquema relacional. Hoy lidero la integración de cálculos bioquímicos dinámicos junto a ingenieros de Adaca Medical.</p></div>
+                <div><p class="pss-k mono"><svg class="ic"><use href="#i-chart"/></svg>Impacto</p><p>El rigor técnico aseguró una inversión corporativa inicial: arquitectura de grado empresarial.</p></div>
+              </div>
+              <ul class="chips mono"><li>Laravel</li><li>Vue.js</li><li>PostgreSQL</li><li>MySQL</li><li>TailwindCSS</li></ul>
+            </div>
+          </div>
         </article>
 
-        <article class="case reveal">
-          <span class="tag mono">Logística</span>
-          <h3>Smart-FIFO</h3>
-          <p class="case-one">Inventario con rotación FIFO garantizada, códigos QR y mapa del almacén.</p>
-          <p>El sistema elige el lote correcto y guía el despacho en un mapa visual. Elimina mermas por caducidad y reduce errores humanos.</p>
-          <ul class="chips mono"><li>FastAPI</li><li>Python</li><li>MySQL</li><li>QR</li></ul>
+        <article class="acc reveal spot">
+          <button class="acc-head" aria-expanded="false" aria-controls="p3" id="p3h">
+            <span class="acc-num dot-font">03</span>
+            <span class="acc-icon"><svg class="ic"><use href="#i-scope"/></svg></span>
+            <span class="acc-title">
+              <span class="acc-name">MicroOV <span class="by mono">Chúuk</span></span>
+              <span class="acc-sum">Análisis microscópico en tiempo real asistido por IA.</span>
+            </span>
+            <span class="badge mono badge-dim">IA · Laboratorio</span>
+            <span class="acc-chev"><svg class="ic"><use href="#i-chevron"/></svg></span>
+          </button>
+          <div class="acc-body" id="p3" role="region" aria-labelledby="p3h">
+            <div class="acc-inner">
+              <div class="pss">
+                <div><p class="pss-k mono"><svg class="ic"><use href="#i-target"/></svg>Problema</p><p>El análisis microscópico es lento, caro y depende 100 % de un experto en sitio: un cuello de botella.</p></div>
+                <div><p class="pss-k mono"><svg class="ic"><use href="#i-bulb"/></svg>Solución</p><p>Plataforma web con YOLOv8 para detección automática y un asistente con GPT-4 que guía al personal no experto.</p></div>
+                <div><p class="pss-k mono"><svg class="ic"><use href="#i-chart"/></svg>Impacto</p><p>El análisis pasa de minutos a segundos y un analista junior puede hacer el trabajo de un senior.</p></div>
+              </div>
+              <ul class="chips mono"><li>FastAPI</li><li>YOLOv8</li><li>GPT-4 API</li><li>JavaScript</li><li>TailwindCSS</li></ul>
+            </div>
+          </div>
         </article>
 
-        <article class="case reveal">
-          <span class="tag mono">Multiplataforma</span>
-          <h3>CellyApp</h3>
-          <p class="case-one">Una base de código para escritorio y Android.</p>
-          <p>Construida sobre Chromium (la misma idea que Discord): núcleo y UI compartidos, empaquetados de forma nativa. Las funciones nuevas llegan a ambas plataformas a la vez.</p>
-          <ul class="chips mono"><li>TypeScript</li><li>Chromium</li><li>Android</li><li>Desktop</li></ul>
+        <article class="acc reveal spot">
+          <button class="acc-head" aria-expanded="false" aria-controls="p4" id="p4h">
+            <span class="acc-num dot-font">04</span>
+            <span class="acc-icon"><svg class="ic"><use href="#i-box"/></svg></span>
+            <span class="acc-title">
+              <span class="acc-name">Smart-FIFO <span class="by mono">Chúuk</span></span>
+              <span class="acc-sum">Inventario con lógica FIFO, códigos QR y dashboard en tiempo real.</span>
+            </span>
+            <span class="badge mono badge-dim">Logística</span>
+            <span class="acc-chev"><svg class="ic"><use href="#i-chevron"/></svg></span>
+          </button>
+          <div class="acc-body" id="p4" role="region" aria-labelledby="p4h">
+            <div class="acc-inner">
+              <div class="pss">
+                <div><p class="pss-k mono"><svg class="ic"><use href="#i-target"/></svg>Problema</p><p>Una mala rotación de inventario genera mermas por caducidad y eleva los costos de almacenamiento.</p></div>
+                <div><p class="pss-k mono"><svg class="ic"><use href="#i-bulb"/></svg>Solución</p><p>El sistema garantiza la rotación FIFO: identifica el lote correcto y guía el despacho con un mapa visual del almacén.</p></div>
+                <div><p class="pss-k mono"><svg class="ic"><use href="#i-chart"/></svg>Impacto</p><p>Elimina mermas por caducidad y reduce errores humanos en toda la operación logística.</p></div>
+              </div>
+              <ul class="chips mono"><li>FastAPI</li><li>Python</li><li>JavaScript</li><li>MySQL</li><li>QR</li></ul>
+            </div>
+          </div>
+        </article>
+
+        <article class="acc reveal spot">
+          <button class="acc-head" aria-expanded="false" aria-controls="p5" id="p5h">
+            <span class="acc-num dot-font">05</span>
+            <span class="acc-icon"><svg class="ic"><use href="#i-devices"/></svg></span>
+            <span class="acc-title">
+              <span class="acc-name">CellyApp <span class="by mono">Chúuk</span></span>
+              <span class="acc-sum">Una sola base de código para escritorio y Android.</span>
+            </span>
+            <span class="badge mono badge-dim">Multiplataforma</span>
+            <span class="acc-chev"><svg class="ic"><use href="#i-chevron"/></svg></span>
+          </button>
+          <div class="acc-body" id="p5" role="region" aria-labelledby="p5h">
+            <div class="acc-inner">
+              <div class="pss">
+                <div><p class="pss-k mono"><svg class="ic"><use href="#i-target"/></svg>Problema</p><p>Mantener bases de código separadas para escritorio y Android duplica tiempos, costos y fragmenta la interfaz.</p></div>
+                <div><p class="pss-k mono"><svg class="ic"><use href="#i-bulb"/></svg>Solución</p><p>Una app sobre Chromium (la misma idea que Discord): núcleo y UI compartidos, empaquetados de forma nativa para cada plataforma.</p></div>
+                <div><p class="pss-k mono"><svg class="ic"><use href="#i-chart"/></svg>Impacto</p><p>Las funciones nuevas llegan a escritorio y Android a la vez, con una experiencia uniforme y mucho menos mantenimiento.</p></div>
+              </div>
+              <ul class="chips mono"><li>TypeScript</li><li>JavaScript</li><li>Chromium</li><li>Android</li><li>Desktop</li></ul>
+            </div>
+          </div>
         </article>
       </div>
+    </section>
+
+    <!-- PROCESO -->
+    <section class="section wrap" id="proceso">
+      <header class="section-head reveal">
+        <p class="label mono"><span class="idx">03</span>Cómo trabajo</p>
+        <h2>De la idea al <em>producto</em></h2>
+      </header>
+      <ol class="process">
+        <li class="step reveal"><span class="step-ic"><svg class="ic"><use href="#i-search"/></svg></span><span class="dot-font step-n">01</span><h3>Descubrir</h3><p>Entender el problema de negocio, al usuario y las restricciones reales.</p></li>
+        <li class="step reveal"><span class="step-ic"><svg class="ic"><use href="#i-pen"/></svg></span><span class="dot-font step-n">02</span><h3>Diseñar</h3><p>Arquitectura, datos e interfaz pensados antes de escribir código.</p></li>
+        <li class="step reveal"><span class="step-ic"><svg class="ic"><use href="#i-code"/></svg></span><span class="dot-font step-n">03</span><h3>Construir</h3><p>Iteraciones cortas, código limpio y revisiones claras.</p></li>
+        <li class="step reveal"><span class="step-ic"><svg class="ic"><use href="#i-shield"/></svg></span><span class="dot-font step-n">04</span><h3>Validar</h3><p>Pruebas en condiciones reales: campo, laboratorio, almacén.</p></li>
+        <li class="step reveal"><span class="step-ic"><svg class="ic"><use href="#i-rocket"/></svg></span><span class="dot-font step-n">05</span><h3>Desplegar</h3><p>Lanzar, medir y pulir hasta que el producto se sienta terminado.</p></li>
+      </ol>
     </section>
 
     <!-- OPEN SOURCE -->
-    <section id="open-source" class="section wrap">
-      <div class="section-head">
-        <p class="eyebrow mono">02 — Open source</p>
-        <h2>Herramientas pequeñas, decisiones explicadas</h2>
-        <p class="section-sub">Cada repo documenta el porqué de sus decisiones de arquitectura, no solo el cómo.</p>
-      </div>
-      <div class="repo-grid">
-        <a class="repo reveal" href="https://github.com/Ares-AMF/eco_fastapi_template" target="_blank" rel="noopener">
-          <span class="repo-path mono">Ares-AMF / <b>eco_fastapi_template</b></span>
-          <p>Plantilla de microservicios de bajo consumo. Serialización con orjson (Rust), uvloop, compresión equilibrada y rate limiting.</p>
-          <span class="repo-foot mono"><i class="lang py"></i>Python <span class="arrow">↗</span></span>
+    <section id="herramientas" class="section wrap">
+      <header class="section-head reveal">
+        <p class="label mono"><span class="idx">04</span>Ingeniería &amp; open source</p>
+        <h2>Herramientas que hacen el software <em>más eficiente</em></h2>
+      </header>
+      <div class="tools">
+        <a class="tool reveal spot tilt" href="https://github.com/Ares-AMF/eco_fastapi_template" target="_blank" rel="noopener">
+          <span class="tool-top"><span class="tool-ic"><svg class="ic"><use href="#i-leaf"/></svg></span><svg class="ic tool-go"><use href="#i-arrow"/></svg></span>
+          <h3>Eco-FastAPI Template</h3>
+          <p>Microservicios de bajo consumo: serialización con orjson (Rust), uvloop, compresión equilibrada y rate limiting.</p>
+          <span class="tool-foot mono"><i class="devicon-python-plain"></i>Python · FastAPI · Docker</span>
         </a>
-        <a class="repo reveal" href="https://github.com/Ares-AMF/vanilla_fetcher" target="_blank" rel="noopener">
-          <span class="repo-path mono">Ares-AMF / <b>vanilla_fetcher</b></span>
-          <p>Cliente HTTP de menos de 2 KB. Backoff exponencial, caché con TTL y modo ahorro de datos del navegador.</p>
-          <span class="repo-foot mono"><i class="lang js"></i>JavaScript <span class="arrow">↗</span></span>
+        <a class="tool reveal spot tilt" href="https://github.com/Ares-AMF/vanilla_fetcher" target="_blank" rel="noopener">
+          <span class="tool-top"><span class="tool-ic"><svg class="ic"><use href="#i-wifi"/></svg></span><svg class="ic tool-go"><use href="#i-arrow"/></svg></span>
+          <h3>Vanilla Fetcher</h3>
+          <p>Cliente HTTP de menos de 2 KB con backoff exponencial, caché con TTL y detección del modo ahorro de datos.</p>
+          <span class="tool-foot mono"><i class="devicon-javascript-plain"></i>JavaScript · Cero dependencias</span>
         </a>
-        <a class="repo reveal" href="https://github.com/Ares-AMF/disk-audit-cli" target="_blank" rel="noopener">
-          <span class="repo-path mono">Ares-AMF / <b>disk-audit-cli</b></span>
+        <a class="tool reveal spot tilt" href="https://github.com/Ares-AMF/disk-audit-cli" target="_blank" rel="noopener">
+          <span class="tool-top"><span class="tool-ic"><svg class="ic"><use href="#i-disk"/></svg></span><svg class="ic tool-go"><use href="#i-arrow"/></svg></span>
+          <h3>Disk Audit CLI</h3>
           <p>Auditor de disco en paralelo con multiprocessing y os.scandir. Encuentra node_modules, venvs y builds olvidados.</p>
-          <span class="repo-foot mono"><i class="lang py"></i>Python <span class="arrow">↗</span></span>
+          <span class="tool-foot mono"><i class="devicon-python-plain"></i>Python · Multiprocessing</span>
         </a>
       </div>
     </section>
 
-    <!-- ABOUT -->
-    <section id="sobre-mi" class="section wrap about">
-      <div class="section-head">
-        <p class="eyebrow mono">03 — Sobre mí</p>
-        <h2>Ingeniero con mente de <em>artesano</em></h2>
+    <!-- TECNOLOGÍAS -->
+    <section id="tecnologias" class="section wrap">
+      <header class="section-head reveal">
+        <p class="label mono"><span class="idx">05</span>Tecnologías</p>
+        <h2>Mi <em>stack</em></h2>
+      </header>
+      <div class="tabs mono reveal" role="tablist" aria-label="Filtrar tecnologías">
+        <button role="tab" aria-selected="true" data-filter="all">Todo</button>
+        <button role="tab" aria-selected="false" data-filter="back">Backend</button>
+        <button role="tab" aria-selected="false" data-filter="front">Frontend</button>
+        <button role="tab" aria-selected="false" data-filter="ai">IA</button>
+        <button role="tab" aria-selected="false" data-filter="infra">Datos &amp; Infra</button>
+        <span class="tab-pill" aria-hidden="true"></span>
       </div>
-      <div class="about-grid">
-        <div class="about-text">
-          <p>Estudio Ingeniería en Sistemas Computacionales y soy CTO de Chúuk. Me interesa el punto donde el software se encuentra con la biología: plagas en un cultivo, células en un microscopio, muestras en un laboratorio.</p>
-          <p>Trabajo con lo que llamo <strong>libertad estructurada</strong>: autonomía para encontrar la mejor solución, dentro de un propósito claro y revisiones constantes. Me importa que el producto final se vea y se sienta pulido, no solo que funcione.</p>
-          <p>Fuera del teclado dibujo, escribo y escucho mucha música. Tengo certificaciones de Cisco Networking Academy y Fundación Carlos Slim.</p>
-        </div>
-        <div class="stack">
-          <h3 class="mono">stack.json</h3>
-          <dl>
-            <div><dt>Backend</dt><dd>Python · FastAPI · PHP · Laravel</dd></div>
-            <div><dt>Frontend</dt><dd>TypeScript · Vue · Tailwind</dd></div>
-            <div><dt>IA</dt><dd>YOLOv8 · PyTorch · APIs de LLM</dd></div>
-            <div><dt>Datos</dt><dd>PostgreSQL · MySQL</dd></div>
-            <div><dt>Infra</dt><dd>Docker · Linux · Edge · Git</dd></div>
-          </dl>
-        </div>
-      </div>
+      <ul class="tech reveal" id="tech">
+        <li data-cat="back"><i class="devicon-python-plain"></i><span>Python</span></li>
+        <li data-cat="back"><i class="devicon-fastapi-plain"></i><span>FastAPI</span></li>
+        <li data-cat="back"><i class="devicon-php-plain"></i><span>PHP</span></li>
+        <li data-cat="back"><i class="devicon-laravel-original"></i><span>Laravel</span></li>
+        <li data-cat="front"><i class="devicon-javascript-plain"></i><span>JavaScript</span></li>
+        <li data-cat="front"><i class="devicon-typescript-plain"></i><span>TypeScript</span></li>
+        <li data-cat="front"><i class="devicon-vuejs-plain"></i><span>Vue.js</span></li>
+        <li data-cat="front"><i class="devicon-tailwindcss-original"></i><span>Tailwind</span></li>
+        <li data-cat="ai"><i class="devicon-pytorch-original"></i><span>PyTorch</span></li>
+        <li data-cat="ai"><i class="devicon-opencv-plain"></i><span>OpenCV</span></li>
+        <li data-cat="ai"><svg class="ic"><use href="#i-scope"/></svg><span>YOLOv8</span></li>
+        <li data-cat="ai"><svg class="ic"><use href="#i-spark"/></svg><span>APIs de LLM</span></li>
+        <li data-cat="infra"><i class="devicon-postgresql-plain"></i><span>PostgreSQL</span></li>
+        <li data-cat="infra"><i class="devicon-mysql-original"></i><span>MySQL</span></li>
+        <li data-cat="infra"><i class="devicon-docker-plain"></i><span>Docker</span></li>
+        <li data-cat="infra"><i class="devicon-ubuntu-plain"></i><span>Linux</span></li>
+        <li data-cat="infra"><i class="devicon-git-plain"></i><span>Git</span></li>
+      </ul>
     </section>
 
-    <!-- CONTACT -->
-    <section id="contacto" class="section wrap contact reveal">
-      <p class="eyebrow mono">04 — Contacto</p>
-      <h2>Siempre abierto a <em>colaborar</em>.</h2>
-      <p class="section-sub">¿Tienes un problema difícil de software, IA o datos? Cuéntamelo.</p>
-      <div class="contact-links">
-        <a class="btn btn-primary" href="mailto:arturo.franco1406@gmail.com">arturo.franco1406@gmail.com</a>
-        <a class="btn btn-ghost" href="https://www.linkedin.com/in/ares-arturo-molina-franco" target="_blank" rel="noopener">LinkedIn ↗</a>
-        <a class="btn btn-ghost" href="https://github.com/Ares-AMF" target="_blank" rel="noopener">GitHub ↗</a>
+    <!-- CONTACTO -->
+    <section id="contacto" class="section wrap">
+      <div class="contact widget reveal spot">
+        <div class="contact-left">
+          <p class="label mono"><span class="idx">06</span>Contacto</p>
+          <h2>Siempre abierto a <em>colaborar</em>.</h2>
+          <p class="muted">¿Tienes un problema complejo de software, IA u optimización? Cuéntamelo.</p>
+          <a class="btn btn-primary magnetic" href="mailto:arturo.franco1406@gmail.com">Escríbeme <svg class="ic"><use href="#i-send"/></svg></a>
+        </div>
+        <ul class="contact-list">
+          <li>
+            <span class="cl-ic"><svg class="ic"><use href="#i-mail"/></svg></span>
+            <a href="mailto:arturo.franco1406@gmail.com">arturo.franco1406@gmail.com</a>
+            <button class="copy" data-copy="arturo.franco1406@gmail.com" aria-label="Copiar correo"><svg class="ic"><use href="#i-copy"/></svg></button>
+          </li>
+          <li>
+            <span class="cl-ic"><i class="devicon-linkedin-plain"></i></span>
+            <a href="https://www.linkedin.com/in/ares-arturo-molina-franco" target="_blank" rel="noopener">LinkedIn</a>
+            <svg class="ic cl-go"><use href="#i-arrow"/></svg>
+          </li>
+          <li>
+            <span class="cl-ic"><i class="devicon-github-original"></i></span>
+            <a href="https://github.com/Ares-AMF" target="_blank" rel="noopener">github.com/Ares-AMF</a>
+            <svg class="ic cl-go"><use href="#i-arrow"/></svg>
+          </li>
+          <li>
+            <span class="cl-ic"><svg class="ic"><use href="#i-pin"/></svg></span>
+            <span>Chihuahua, México</span>
+          </li>
+        </ul>
       </div>
     </section>
   </main>
 
-  <footer class="wrap footer mono">
+  <footer class="footer wrap mono">
     <span>© <span id="year">2026</span> Ares A.M.F.</span>
-    <span class="dim">Hecho a mano, sin frameworks.</span>
+    <span class="footer-mid"><svg class="chuuk"><use href="#i-chuuk"/></svg>CTO @ Chúuk</span>
+    <a href="#inicio" class="to-top">Volver arriba <svg class="ic"><use href="#i-arrow"/></svg></a>
   </footer>
 
+  <div class="toast mono" id="toast" role="status" aria-live="polite"></div>
   <script src="app.js" defer></script>
 </body>
 </html>
