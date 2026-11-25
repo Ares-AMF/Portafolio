@@ -180,11 +180,16 @@
   const tabs = $$(".tabs [role=tab]"), pill = $(".tab-pill"), techs = $$("#tech li");
   const movePill = (btn) => {
     pill.style.width = `${btn.offsetWidth}px`;
-    pill.style.transform = `translate(${btn.offsetLeft}px, ${btn.offsetTop - 5}px)`;
+    pill.style.height = `${btn.offsetHeight}px`;
+    pill.style.transform = `translate(${btn.offsetLeft}px, ${btn.offsetTop}px)`;
+
   };
   tabs.forEach((btn) => btn.addEventListener("click", () => {
     tabs.forEach((b) => b.setAttribute("aria-selected", String(b === btn)));
     movePill(btn);
+    const bar = btn.parentElement;
+    if (bar.scrollWidth > bar.clientWidth)
+      bar.scrollTo({ left: btn.offsetLeft - (bar.clientWidth - btn.offsetWidth) / 2, behavior: reduce ? "auto" : "smooth" });
     const f = btn.dataset.filter;
     techs.forEach((li) => li.classList.toggle("dim", f !== "all" && li.dataset.cat !== f));
   }));
