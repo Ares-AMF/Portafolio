@@ -1,4 +1,4 @@
-// Portafolio — Ares Molina. Sin dependencias.
+// Portafolio — Ares A.M.F.. Sin dependencias.
 (() => {
   document.documentElement.classList.remove("no-js");
   const reduce = matchMedia("(prefers-reduced-motion: reduce)").matches;
